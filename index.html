@@ -81,7 +81,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Describing the Musical Work</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <p class="mb-0 text-white-50">First of all, the ontology aims to describe the characteristics of the music track, i.e. all the information that has been defined as "metadata" in the previous sections. To do this, I decided to use the Music Ontology. This ontology's choice is mainly due to the wide use that has been made of it in various works in recent years and its broad interoperability with other ontologies (e.g. TimeLine ontology, Music Score Ontology, etc.).</p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -96,7 +96,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Describing Symbolical Music Events</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                    <p class="mb-0 text-white-50">In order to represent the symbolic representations of a composition, I instead used the HaMSE ontology, which was created specifically for this research. With the class hamse:SymbolicEvent I therefore aim to describe everything that can be a nuclear element of the symbolic representation, interpreted as either a note or a pause. The notation event, such as all the other classes listed in this section, is intended as a subclass of hamse:MusicologicalFeature. This Symbolic Event is a super-class of all the classes that characterise the note (e.g. classes that express dynamic, pitch, etc.).</p>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
                             </div>
@@ -111,7 +111,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Representing Extracted Features</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <p class="mb-0 text-white-50">The representation of the extracted features aims to connect these features with both the symbolic representation from which they were extracted and the signal representation, providing a temporal reference on their location. As far as the features extracted from the audio track are concerned, the opposite is true: the features are represented in connection with their temporal location and a reference of their approximate location within the symbolic representation is provided.</p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -126,7 +126,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Score-audio-features Alignment</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                    <p class="mb-0 text-white-50">To align the symbolic representation to the audio track I used the TimeLine Ontology. This ontology allows two different timelines to be defined and aligned. In particular in this case I am going to align an abstract timeline (tl:AbstractTimeLine) with a discrete timeline (tl:DiscreteTimeLine). These two different timelines are aligned by means of tl:TimeLineMap.</p>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
                             </div>
