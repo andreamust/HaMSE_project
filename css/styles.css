@@ -10346,7 +10346,7 @@ body {
 }
 
 /* Style the Image Used to Trigger the Modal */
-#myImg {
+#myImg, #myImg1, #myImg2, #myImg3, #myImg4 {
   border-radius: 5px;
   cursor: zoom-in;
   transition: 0.3s;
