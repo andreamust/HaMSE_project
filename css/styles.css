@@ -10433,4 +10433,7 @@ body {
 
 .doc-iframe {
   bottom: 10%;
+  height: 45em;
+  width: 75em;
+  margin-left: -30%;
 }
