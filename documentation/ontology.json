@@ -1,0 +1,3348 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/mo/Arrangement"
+    }, {
+      "@id" : "http://purl.org/ontology/mo/Composition"
+    }, {
+      "@id" : "http://purl.org/ontology/mo/MusicalExpression"
+    }, {
+      "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
+    }, {
+      "@id" : "http://purl.org/ontology/mo/MusicalWork"
+    }, {
+      "@id" : "http://purl.org/ontology/mo/Performance"
+    }, {
+      "@id" : "http://purl.org/ontology/mo/Recording"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/mo/MusicalWork"
+    }, {
+      "@id" : "http://purl.org/ontology/mo/Score"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/mo/MusicalWork"
+    }, {
+      "@id" : "http://purl.org/ontology/mo/Score"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/mo/Arrangement"
+    }, {
+      "@id" : "http://purl.org/ontology/mo/Composition"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/mo/MusicalWork"
+    }, {
+      "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/mo/MusicalWork"
+    }, {
+      "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/NET/c4dm/timeline.owl#AbstractInterval"
+    }, {
+      "@id" : "http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/NET/c4dm/timeline.owl#AbstractInterval"
+    }, {
+      "@id" : "http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isAccidentalOf"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Chord"
+    }, {
+      "@id" : "_:genid38"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#constitutesProgression"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#ChordProgression"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasDissonanceCount"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasLiteralDynamic"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMidiVelocity"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#belongsToRussellsQuadrant"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+    }, {
+      "@id" : "_:genid46"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasInstrumentPart"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isPositionOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+    }, {
+      "@id" : "_:genid51"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#belongsToIntervalPattern"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPattern"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalPatternCardinality"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#intervalCreatedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalType"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+    }, {
+      "@id" : "_:genid58"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMelodicPatternConstituent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMelodicPatternCardinality"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#Interval"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDefinedAtTimeInterval"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isPositionOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMeasure"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMeasureOffset"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Accidental"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasAccidental"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dynamic"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasDynamic"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasRhythmicPatternCardinality"
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDefinedBySegment"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart"
+    }, {
+      "@id" : "_:genid71"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasVoice"
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#DoubleFlat"
+    }, {
+      "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#DoubleSharp"
+    }, {
+      "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Flat"
+    }, {
+      "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Sharp"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/mo/Movement"
+    }, {
+      "@id" : "http://purl.org/ontology/mo/MusicalWork"
+    }, {
+      "@id" : "http://purl.org/ontology/mo/Performance"
+    }, {
+      "@id" : "http://purl.org/ontology/mo/Signal"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/NET/c4dm/timeline.owl#AbstractInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An interval defined on an abstract time-line."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Abstract Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#Interval"
+  } ]
+}, {
+  "@id" : "http://purl.org/NET/c4dm/timeline.owl#AbstractTimeLine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract time lines may be used as a backbone for Score, Works, ...\nThis allows for TimeLine maps to relate works to a given\nperformance (this part was played at this time)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Abstract Time Line"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#TimeLine"
+  } ]
+}, {
+  "@id" : "http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An interval defined on a discrete timeline, like the one backing a digital signal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Discrete Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#Interval"
+  } ]
+}, {
+  "@id" : "http://purl.org/NET/c4dm/timeline.owl#DiscreteTimeLine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A discrete time line (like the time line backing a digital signal)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Discrete TimeLine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#TimeLine"
+  } ]
+}, {
+  "@id" : "http://purl.org/NET/c4dm/timeline.owl#Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An interval (same as in OWL-Time). Allen's relationships are defined in OWL-Time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Interval"
+  } ]
+}, {
+  "@id" : "http://purl.org/NET/c4dm/timeline.owl#TimeLine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a linear and coherent piece of time -- can be either abstract (such as the one behind a score) or concrete (such as the universal time line).\nTwo timelines can be mapped using timeline maps."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TimeLine"
+  } ]
+}, {
+  "@id" : "http://purl.org/NET/c4dm/timeline.owl#TimeLineMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Allows to map two time lines together."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Time LineMap"
+  } ]
+}, {
+  "@id" : "http://purl.org/NET/c4dm/timeline.owl#beginsAtDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid29"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "begins at duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#duration"
+  } ]
+}, {
+  "@id" : "http://purl.org/NET/c4dm/timeline.owl#domainTimeLine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a timeline map to its domain timeline."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#TimeLineMap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "domain timeline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#DiscreteTimeLine"
+  } ]
+}, {
+  "@id" : "http://purl.org/NET/c4dm/timeline.owl#endsAtDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid32"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ends at duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#duration"
+  } ]
+}, {
+  "@id" : "http://purl.org/NET/c4dm/timeline.owl#rangeTimeLine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a timeline map to its range timeline."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#TimeLineMap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "range timeline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#AbstractTimeLine"
+  } ]
+}, {
+  "@id" : "http://purl.org/NET/c4dm/timeline.owl#timeline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an interval or an instant to the timeline on which it is defined.\n\nThe 29th of August, 2007 would be linked through this property to the universal timeline, whereas\n\"from 2s to 5s on this particular signal\" would be defined on the signal' timeline."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "timeline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#TimeLine"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/AnalogSignal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Analog Signal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/Signal"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Arrangement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An arrangement event. Takes as agent the arranger, and produces a score (informational object, not the actually published score)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Arrangement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Composition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A composition event. Takes as agent the composer himself. It produces a MusicalWork, or a MusicalExpression (when the initial \"product\" is a score, for example), or both."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Composition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/DigitalSignal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Digital Signal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/Signal"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Genre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An expressive style of music.\nAny taxonomy can be plug-in here. You can either define a genre by yourself, like this:\n:mygenre a mo:Genre; dc:title \"electro rock\".\nOr you can refer to a DBPedia genre (such as http://dbpedia.org/resource/Baroque_music), allowing semantic web clients to access easily really detailed structured information about the genre you are refering to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Instrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any of various devices or contrivances that can be used to produce musical tones or sound. Any taxonomy can be used to subsume this concept. The default one is one extracted by Ivan Herman from the Musicbrainz instrument taxonomy, conforming to SKOS. This concept holds a seeAlso link towards this taxonomy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Key",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicated the key used by the musicians during a performance, or the key of a MusicalWork. Any of 24 major or minor diatonic scales that provide the tonal framework for a piece of music."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Key"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Movement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A movement is a self-contained part of a musical work. While individual or selected movements from a composition are sometimes performed separately, a performance of the complete work requires all the movements to be performed in succession. Often a composer attempts to interrelate the movements thematically, or sometimes in more subtle ways, in order that the individual movements exert a cumulative effect. In some forms, composers sometimes link the movements, or ask for them to be played without a pause between them."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Movement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalWork"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/MusicArtist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person or a group of people (or a computer :-) ), whose musical creative work shows sensitivity and imagination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Music Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/MusicalExpression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, etc., or any combination of such forms. For example: Work #1 Franz Schubert's Trout quintet * Expression #1 the composer's score * Expression #2 sound issued from the performance by the Amadeus Quartet and Hephzibah Menuhin on piano * Expression #3 sound issued from the performance by the Cleveland Quartet and Yo-Yo Ma on the cello * . . . . The Music Ontology defines the following sub-concepts of a MusicalExpression, which should be used instead of MusicalExpression itself: Score (the result of an arrangement), Sound (produced during a performance), Signal. However, it is possible to stick to FRBR and bypass the worflow mechanism this ontology defines by using the core FRBR properties on such objects. But it is often better to use events to interconnect such expressions (allowing to go deeply into the production process - `this performer was playing this particular instrument at that particular time')."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Musical Expression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/MusicalManifestation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This entity is related to the edition/production/publication of a musical expression (musical manifestation are closely related with the music industry (their terms, concepts, definitions, methods (production, publication, etc.), etc.) From the FRBR final report: The entity defined as manifestation encompasses a wide range of materials, including manuscripts, books, periodicals, maps, posters, sound recordings, films, video recordings, CD-ROMs, multimedia kits, etc. As an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form. Work #1 J. S. Bach's Six suites for unaccompanied cello * Expression #1 sound issued during the performance by Janos Starker recorded in 1963 and 1965 o Manifestation #1 recordings released on 33 1/3 rpm sound discs in 1965 by Mercury o Manifestation #2 recordings re-released on compact disc in 1991 by Mercury * Expression #2 sound issued during the performances by Yo-Yo Ma recorded in 1983 o Manifestation #1 recordings released on 33 1/3 rpm sound discs in 1983 by CBS Records o Manifestation #2 recordings re-released on compact disc in 1992 by CBS Records Changes that occur deliberately or even inadvertently in the production process that affect the copies result, strictly speaking, in a new manifestation. A manifestation resulting from such a change may be identified as a particular \"state\" or \"issue\" of the publication. Changes that occur to an individual copy after the production process is complete (e.g., the loss of a page, rebinding, etc.) are not considered to result in a new manifestation. That copy is simply considered to be an exemplar (or item) of the manifestation that deviates from the copy as produced. With the entity defined as manifestation we can describe the physical characteristics of a set of items and the characteristics associated with the production and distribution of that set of items that may be important factors in enabling users to choose a manifestation appropriate to their physical needs and constraints, and to identify and acquire a copy of that manifestation. Defining manifestation as an entity also enables us to draw relationships between specific manifestations of a work. We can use the relationships between manifestations to identify, for example, the specific publication that was used to create a microreproduction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Musical Manifestation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/MusicalWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Distinct intellectual or artistic musical creation. From the FRBR final report: A work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work. For example: work #1 J. S. Bach's The art of the fugue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Musical Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Performance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A performance event. It might include as agents performers, engineers, conductors, or even listeners. It might include as factors a score, a MusicalWork, musical instruments. It might produce a sound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://purl.org/ontology/mo/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Perormance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/PublishedScore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A published score (subclass of MusicalManifestation)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Published Score"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Record",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A published record (manifestation which first aim is to render the product of a recording)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Recording",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A recording event. Takes a sound as a factor to produce a signal (analog or digital). The location of such events (if any) is the actual location of the corresponding microphone or the \"recording device\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recording"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Score",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Here, we are dealing with the informational object (the MusicalExpression), not the actually \"published\" score. This may be, for example, the product of an arrangement process."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Score"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalExpression"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Signal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subclass of MusicalExpression, representing a signal, for example a master signal produced by a performance and a recording."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Signal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalExpression"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Sound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subclass of MusicalExpression, representing a sound. Realisation of a MusicalWork during a musical Performance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/arranged_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a work to an arrangement event where it was arranged"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalWork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "arranged in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Arrangement"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/arrangement_of"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/arrangement_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates an arrangement event to a work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Arrangement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "arrangement of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalWork"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/composed_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a MusicalWork to the Composition event pertaining to its creation. For example, I might use this property to associate the Magic Flute to its composition event, occuring during 1782 and having as a mo:composer Mozart."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalWork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "composed in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Composition"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/produced_work"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/composer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a composition event to the actual composer. For example, this property could link the event corresponding to the composition of the Magic Flute in 1782 to Mozart himself (who obviously has a FOAF profile:-) )."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Composition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "composer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicArtist"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isComposerOf"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/conducted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates agents to the performances they were conducting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "conducted"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Performance"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/conductor"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/conductor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a performance to the conductor involved"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Performance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "conductor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/genre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates an event (like a performance or a recording) to a particular musical genre. Further version of this property may also include works and scores in the domain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Genre"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/instrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a performance to a musical instrument involved"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Performance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Instrument"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/key",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicated the key used by the musicians during a performance, or the key of a MusicalWork. Any of 24 major or minor diatonic scales that provide the tonal framework for a piece of music."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "key"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Key"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/movement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates that a musical work has movements."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalWork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "movement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Movement"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/movement_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the position of a movement in a musical work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Movement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "movement number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/opus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Used to define a creative work, especially a musical composition numbered to designate the order of a composer's works."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalWork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "opus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/performance_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Performance to a musical work or an arrangement that is being used as a factor in it. For example, I might use this property to attach the Magic Flute musical work to a particular Performance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Performance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "performance of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/performed_in"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/performed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates agents to the performances they were performing in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "performed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Performance"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/performer"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/performed_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Performance to a musical work or an arrangement that is being used as a factor in it. For example, I might use this property to attach the Magic Flute musical work to a particular Performance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid17"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "performance in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Performance"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/performer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a performance to the performers involved"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Performance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "performer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/produced_score",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates an arrangement or a composition event to a score product (score here does not refer to a published score, but more an abstract arrangement of a particular work)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid20"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "produced_score"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Score"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/produced_signal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Recording to the outputted signal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Recording"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "produced signal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Signal"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/produced_sound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Performance to a physical Sound that is being produced by it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Performance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "produced sound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Sound"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/produced_work",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a composition event to the produced MusicalWork. For example, this property could link the event corresponding to the composition of the Magic Flute in 1782 to the Magic Flute musical work itself. This musical work can then be used in particular performances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Composition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "produced work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalWork"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/published_as",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a musical expression (e.g. a signal or a score) to one of its manifestations (e.g. a track on a particular record or a published score)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalExpression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "published as"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/recorded_as",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is a shortcut property, allowing to bypass all the Sound/Recording steps. This property allows to directly link a Performance to the recorded Signal. This is recommended for \"normal\" users. However, advanced users wanting to express things such as the location of the microphone will have to create this shortcut as well as the whole workflow, in order to let the \"normal\" users access simply the, well, simple information:-) ."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Performance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "recorded as"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Signal"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/records"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/recording_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Recording event to a physical Sound being recorded. For example, I might use this property to associate a given recording, done using my cell phone, to the sound produced by a particular performance of the magic flute."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Recording"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "recording of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Sound"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/records",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the inverse of the shortcut property recordedAs, allowing to relate directly a performance to a signal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Signal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "records"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Performance"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/sampled_version_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/DigitalSignal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sampled version of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/AnalogSignal"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Signal to a time object - its actual domain,"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/DigitalSignal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#duration",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An agent (eg. person, group, software or physical artifact)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Andrea Poltronieri"
+  } ],
+  "http://purl.org/dc/elements/1.1/license" : [ {
+    "@value" : "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "HaMSE (Harmonic, Melodical, Structural and Emotional feauteres ontology)"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#A",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Note A"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "A"
+  }, {
+    "@language" : "it",
+    "@value" : "La"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#B"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#C"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#D"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#E"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#F"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#G"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Rest"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Accidental",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Defines the pitch modifiers of the note, in particular: demisharp , doublesharp , sharp , flat , demiflat , sesquiflat , sesquisharp , doubleflat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Accidental"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  }, {
+    "@id" : "_:genid35"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dynamic"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Position"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicDuration"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Voice"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#B",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Note B"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "B"
+  }, {
+    "@language" : "it",
+    "@value" : "Si"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#C"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#D"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#E"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#F"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#G"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Rest"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#C",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Note C"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "C"
+  }, {
+    "@language" : "it",
+    "@value" : "Do"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#D"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#E"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#F"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#G"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Rest"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Chord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any harmonic set of pitches/frequencies consisting of multiple notes (also called \"pitches\") that are heard as if sounding simultaneously."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Chord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#ChordProgression"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dissonance"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#EmotionType"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#ChordProgression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A succession of chords. Chord progressions are the defining feature on which melody and rhythm are built (e.g. I–vi–ii–V)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Chords Progression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#ChordVoicing"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#EmotionType"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#ChordVoicing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The voicing opf a chord, which defines the simultaneous vertical placement of notes in relation to each other."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Chord Voice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Chord"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#EmotionType"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Note D"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "D"
+  }, {
+    "@language" : "it",
+    "@value" : "Re"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#E"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#F"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#G"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Rest"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dissonance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific kind of melodic interval. Within the western tonal tradition dissonance is associated with harshness, unpleasantness, or unacceptability, although this depends also on familiarity and musical expertise."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dissonance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+  }, {
+    "@id" : "_:genid40"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#EmotionType"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#DoubleFlat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An accidental that lowers a note by a whole tone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Double Flat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Accidental"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dynamic"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Position"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicDuration"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#DoubleSharp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An accidental that raises a note by a whole tone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Double Sharp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Accidental"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dynamic"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Position"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicDuration"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dynamic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dynamics are instructions in musical notation to the performer about hearing the loudness of a note or phrase."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dynamics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  }, {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Flat"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Position"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Sharp"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicDuration"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#E",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Note E"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "E"
+  }, {
+    "@language" : "it",
+    "@value" : "Mi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#F"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#G"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Rest"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#EmotionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An type of emotion defined on the Russell's circumplex model of affection."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Emotion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  }, {
+    "@id" : "_:genid43"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#F",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Note F"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "F"
+  }, {
+    "@language" : "it",
+    "@value" : "Fa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#G"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Rest"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Flat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An accidental that lowers a note by a semitone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Flat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Accidental"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Position"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicDuration"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#G",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Note G"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "G"
+  }, {
+    "@language" : "it",
+    "@value" : "Sol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Rest"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The part of a score that contains the notes played by a specific instrument. It is defined exactly by one staff and refers to the music material that can be found on it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Instrument Part"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  }, {
+    "@id" : "_:genid48"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Sharp"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid44"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A pattern consisting of melodic intervals that are created between one note and the next."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Interval Pattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPatternConstituent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The constituent of an interval pattern. It has a cardinality that defines the position of the constituent within the pattern."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Interval Pattern Constituent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+  }, {
+    "@id" : "_:genid53"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid49"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An interval that is created between a note and the following one."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Melodic Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  }, {
+    "@id" : "_:genid54"
+  }, {
+    "@id" : "_:genid55"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A pattern consisting of the succession of Symbolic Events that are repeated several times within a music piece."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Melodic Pattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPatternConstituent"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPatternConstituent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The constituent of a melodic pattern. It has a cardinality that defines the position of the constituent within the pattern."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Melodic Pattern Constituent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  }, {
+    "@id" : "_:genid60"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid56"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A musicological feature is defined as any element useful for musicological analysis. This analysis can be of different types, and intertwine with other fields of research, such as psychoacoustics. All typical elements of a score are considered musicological features, together with a series of previously extracted features that group these elements together."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Features"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Position",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The position of a Symbolic Event. It is expressed both from a symbolic perspective (the position on the music score) and from a temporal perspective (by means of the offset time and the endtime of the event)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  }, {
+    "@id" : "_:genid61"
+  }, {
+    "@id" : "_:genid62"
+  }, {
+    "@id" : "_:genid63"
+  }, {
+    "@id" : "_:genid64"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Sharp"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Rest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A musical notation sign that indicates the absence of a sound."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  }, {
+    "@id" : "_:genid65"
+  }, {
+    "@id" : "_:genid66"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A pattern consisting of the Symbolic Duration related to the succession of Symbolic Events that are repeated within a musical piece."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rhythmic Pattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+  }, {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPatternConstituent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The constituent of a rhythmic pattern. It has a cardinality that defines the position of the constituent within the pattern."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rhythmic Pattern Constituent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  }, {
+    "@id" : "_:genid67"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A constituent part of the music structure. Musical segments are defined according to the similarity of the harmonic and melodic material that constitutes them."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Segment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Sharp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An accidental that raises a note by a semitone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sharp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Accidental"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicDuration"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The structure of the music piece. It is composed by different segments that can in turn be organised in patterns (e.g. A-B-C-B-C-D)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  }, {
+    "@id" : "_:genid68"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Defines the duration of the note, according to the music theory relative durations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Symbolic Duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any kind of note and rest that can be found in a music score."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Symbolic Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A symbolic representation is defined as any kind of representation aimed at representing the music material (e.g. MIDI, Music XML, etc.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Symbolic Representation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Voice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "One of the multiple voices that can constitutes a single Instrument Part and are therefore represented on the same staff."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Voice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid69"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#arousesEmotionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Musical Work with the Emotion Type that the piece arouses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  }, {
+    "@id" : "_:genid23"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "arouses emotion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#EmotionType"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isArousedBy"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#belongsToChord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Symbolic Event to the Chord. It is the inverse property of hasChordNote."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongs to chord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Chord"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasChordNote"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#belongsToIntervalPattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Melodic Interval to a Melodic Pattern the interval belongs to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongs to interval pattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPattern"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isComposedByInterval"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#belongsToMelodicPattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Symbolic Event to a Melodic Pattern."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongs to melodic pattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#belongsToRussellsQuadrant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#EmotionType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongs to Russell's quadrant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#constitutesIntervalPattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates an Interval Pattern Constituent to the belonging Interval Pattern. Inverse of hasIntervalPatternConstituent property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPatternConstituent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "constitutes interval pattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPattern"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalPatternConstituent"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#constitutesMelodicPattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Melodic Pattern Constituent to the belonging Melodic Pattern."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPatternConstituent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "constitutes melodic pattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMelodicPatternConstituent"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#constitutesProgression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Chord to the Chord Progression it belongs to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Chord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "constitutes progression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#ChordProgression"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isComposedByChord"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#constitutesRhythmicPattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a Rhythmic Pattern Constituent to the belonging Rhythmic Pattern."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPatternConstituent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "constitutes rhythmic pattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasRhythmicPatternConstituent"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#createsInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates two consequent Symbolic Events with the Melodic Interval they create."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "creates interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#intervalCreatedBy"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#definesPositionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Interval defined on a TimeLine with the Position of the Symbolic Event played at this specific interval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "defines position of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Position"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDefinedAtTimeInterval"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#definesSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links an interval defined on a TimeLine to the segment that defines the interval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "defines segment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#segmentDefinedBy"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#definesStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Structure to its constituent Segments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "defines structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDefinedBySegment"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasAccidental",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Symbolic Event to its Accidental."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has accidental"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Accidental"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isAccidentalOf"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasChordLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Chord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has chord label"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasChordNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Chord to the Symbolic Events it is composed of."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Chord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has chord note"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasChordVoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Chord to its Voicing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Chord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has chord voice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#ChordVoicing"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isChordVoicingOf"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasClef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has clef"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasDissonance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Melodic Interval to a Dissonance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has dissonance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dissonance"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDissonanceOf"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasDissonanceCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dissonance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has dissonance count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Symbolic Event to the Symbolic Duration it has."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicDuration"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDurationOf"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasDynamic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Symbolic Event to its Dynamic."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has dynamic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dynamic"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDynamicOf"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the mo:Musical Work with the main class of the whole HaMSE Ontology, namely MusicologicalFeatures."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalWork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isFeatureOf"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasInstrumentPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Symbolic Representationto the Instrment Parts it composed of."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has part"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isPartOf"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has interval count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalPatternCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPatternConstituent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has interval pattern cardinality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalPatternConstituent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Interval Pattern to its constituents."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has interval pattern constituent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPatternConstituent"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has interval type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasLiteralDynamic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dynamic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has literal dynamic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has measure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMeasureOffset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has measure offset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMelodicPatternCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPatternConstituent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has melodic pattern cardinality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMelodicPatternConstituent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Melodic Pattern to its constituents."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has melodic pattern constituent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPatternConstituent"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMidiInstrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has midi instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMidiPitch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has midi pitch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMidiVelocity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dynamic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has midi velocity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasOctave",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has octave"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Symbolic Event with its Position."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Position"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isPositionOf"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasProgressionCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Chord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has progression cardinality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasRhythmicFigure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Rhythmic Pattern with the Duration that constitutes the pattern."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has rhythmic figure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicDuration"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isRhythmicFigureOf"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasRhythmicPatternCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPatternConstituent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has rhythmic pattern cardinality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasRhythmicPatternConstituent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Rhythmic Pattern to its constituents."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has rhythmic pattern constituent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPatternConstituent"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasStaff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has staff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Musical Work to its Structure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalWork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isStructureOf"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasSymbolicEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates an instrument Voice with the contained Symbolic Events."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Voice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has symbolic event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isSymbolicEventOf"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasSymbolicRepresentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Asscoiates the mo:Movement with the Symbolic Representation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Movement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has symbolic representation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isSymbolicRepresentationOf"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasVoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Instrument Part with the different Voices the part may contain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has voice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Voice"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isVoiceOf"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasVoiceNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#ChordVoicing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has voice number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#intervalCreatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Melodic Interval to the Symbolic Events that generates it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "interval created by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isAccidentalOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse of hasAccidental."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Accidental"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is accidental of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isArousedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates an Emotion Type to the Musical Work or the Segment that arouses such emotion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#EmotionType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is aroused by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  }, {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isChordVoicingOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Chord Voicing to the belonging Chord."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#ChordVoicing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is chord voice of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Chord"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isComposedByChord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Chord Progrression to its constituent Chords."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#ChordProgression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is composed by chord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Chord"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isComposedByInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates an Interval Pattern to its constituent Melodic Interval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is composed by interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isComposerOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of mo:composer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicArtist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is composer of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Composition"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDefinedAtTimeInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Position of a Symbolic Event to the Interval defined on a TimeLine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is defined at time interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#Interval"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDefinedBySegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Segment to the the Structure that is defined by such segment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has segment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDissonanceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Dissonance to the Melodic Interval that creates such dissonance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dissonance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is dissonance of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDurationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Symbolic Duration to the belonging Symbolic Event."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicDuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is duration of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDynamicOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Dynamic to the belonging Symbolic Event."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dynamic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is dynamic of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isFeatureOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Musicological Feature to the Musical Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is feature of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalWork"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse of hasInstrumentPart. Associates the Instrument Part to the belonging Symbolic Representation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is part of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isPositionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Position to the belonging Symbolic Event."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is position of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isRhythmicFigureOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Symbolic Duration to a Rhythmic Pattern."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicDuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is rhythmic figure of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isStructureOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Structure to the Musical Work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is structure of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/MusicalWork"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isSymbolicEventOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a Symbolic Event to the belonging Voice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is symbolic event of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Voice"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isSymbolicRepresentationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Symbolic Representation to the belonging Movement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is symbolic representation of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Movement"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#isVoiceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates o Voice to the belonging Instrument Part."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Voice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is voice of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart"
+  } ]
+}, {
+  "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#segmentDefinedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates the Segment of a piece to the Discrete Interval defined on a Discrete TimeLine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "segment defined by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval"
+  } ]
+} ]

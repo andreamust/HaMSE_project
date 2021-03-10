@@ -1,0 +1,4736 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://github.com/andreamust/HaMSE_Ontology/schema", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/NET/c4dm/timeline.owl", "http://purl.org/ontology/mo", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1" ],
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "author" : [ "Andrea Poltronieri" ],
+    "comments" : {
+      "undefined" : "HaMSE (Harmonic, Melodical, Structural and Emotional feauteres ontology)"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).",
+        "type" : "label"
+      }, {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Andrea Poltronieri",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "140",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "141",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "142",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "144",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "28",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "156",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "157",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "158",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "212",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "228",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "276",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "186",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "290",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "305",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "313",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "154",
+    "type" : "owl:Class"
+  }, {
+    "id" : "219",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "338",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "369",
+    "type" : "owl:Class"
+  }, {
+    "id" : "370",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "321",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "376",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "366",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "232",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dissonance",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dissonance",
+      "en" : "Dissonance"
+    },
+    "comment" : {
+      "en" : "A specific kind of melodic interval. Within the western tonal tradition dissonance is associated with harshness, unpleasantness, or unacceptability, although this depends also on familiarity and musical expertise."
+    },
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPattern",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntervalPattern",
+      "en" : "Interval Pattern"
+    },
+    "subClasses" : [ "1" ],
+    "comment" : {
+      "en" : "A pattern consisting of melodic intervals that are created between one note and the next."
+    },
+    "id" : "17",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#Position",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Position",
+      "en" : "Position"
+    },
+    "comment" : {
+      "en" : "The position of a Symbolic Event. It is expressed both from a symbolic perspective (the position on the music score) and from a temporal perspective (by means of the offset time and the endtime of the event)."
+    },
+    "id" : "31",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#ChordProgression",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChordProgression",
+      "en" : "Chords Progression"
+    },
+    "comment" : {
+      "en" : "A succession of chords. Chord progressions are the defining feature on which melody and rhythm are built (e.g. I–vi–ii–V)."
+    },
+    "id" : "44",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Key",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Key",
+      "en" : "Key"
+    },
+    "comment" : {
+      "en" : "Indicated the key used by the musicians during a performance, or the key of a MusicalWork. Any of 24 major or minor diatonic scales that provide the tonal framework for a piece of music."
+    },
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/MusicalManifestation",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicalManifestation",
+      "en" : "Musical Manifestation"
+    },
+    "subClasses" : [ "94", "95" ],
+    "comment" : {
+      "en" : "This entity is related to the edition/production/publication of a musical expression (musical manifestation are closely related with the music industry (their terms, concepts, definitions, methods (production, publication, etc.), etc.) From the FRBR final report: The entity defined as manifestation encompasses a wide range of materials, including manuscripts, books, periodicals, maps, posters, sound recordings, films, video recordings, CD-ROMs, multimedia kits, etc. As an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form. Work #1 J. S. Bach's Six suites for unaccompanied cello * Expression #1 sound issued during the performance by Janos Starker recorded in 1963 and 1965 o Manifestation #1 recordings released on 33 1/3 rpm sound discs in 1965 by Mercury o Manifestation #2 recordings re-released on compact disc in 1991 by Mercury * Expression #2 sound issued during the performances by Yo-Yo Ma recorded in 1983 o Manifestation #1 recordings released on 33 1/3 rpm sound discs in 1983 by CBS Records o Manifestation #2 recordings re-released on compact disc in 1992 by CBS Records Changes that occur deliberately or even inadvertently in the production process that affect the copies result, strictly speaking, in a new manifestation. A manifestation resulting from such a change may be identified as a particular \"state\" or \"issue\" of the publication. Changes that occur to an individual copy after the production process is complete (e.g., the loss of a page, rebinding, etc.) are not considered to result in a new manifestation. That copy is simply considered to be an exemplar (or item) of the manifestation that deviates from the copy as produced. With the entity defined as manifestation we can describe the physical characteristics of a set of items and the characteristics associated with the production and distribution of that set of items that may be important factors in enabling users to choose a manifestation appropriate to their physical needs and constraints, and to identify and acquire a copy of that manifestation. Defining manifestation as an entity also enables us to draw relationships between specific manifestations of a work. We can use the relationships between manifestations to identify, for example, the specific publication that was used to create a microreproduction."
+    },
+    "attributes" : [ "external" ],
+    "id" : "93",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Instrument",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Instrument",
+      "en" : "Instrument"
+    },
+    "comment" : {
+      "en" : "Any of various devices or contrivances that can be used to produce musical tones or sound. Any taxonomy can be used to subsume this concept. The default one is one extracted by Ivan Herman from the Musicbrainz instrument taxonomy, conforming to SKOS. This concept holds a seeAlso link towards this taxonomy."
+    },
+    "attributes" : [ "external" ],
+    "id" : "85",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#Interval",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interval",
+      "en" : "Interval"
+    },
+    "subClasses" : [ "87", "121" ],
+    "comment" : {
+      "en" : "An interval (same as in OWL-Time). Allen's relationships are defined in OWL-Time."
+    },
+    "attributes" : [ "external" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "124",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "125",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "126",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#duration",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "129",
+    "label" : {
+      "IRI-based" : "duration"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/mo/DigitalSignal",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DigitalSignal",
+      "en" : "Digital Signal"
+    },
+    "attributes" : [ "external" ],
+    "id" : "39",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "132",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "33", "97" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "140"
+  }, {
+    "instances" : 0,
+    "union" : [ "33", "97" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "141"
+  }, {
+    "instances" : 0,
+    "union" : [ "87", "121" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#duration",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "duration"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "87", "121" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "144"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#B",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "B",
+      "en" : "B",
+      "it" : "Si"
+    },
+    "comment" : {
+      "en" : "Note B"
+    },
+    "id" : "145",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#C",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "C",
+      "en" : "C",
+      "it" : "Do"
+    },
+    "comment" : {
+      "en" : "Note C"
+    },
+    "id" : "146",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#A",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "A",
+      "en" : "A",
+      "it" : "La"
+    },
+    "comment" : {
+      "en" : "Note A"
+    },
+    "id" : "147",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Score",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Score",
+      "en" : "Score"
+    },
+    "comment" : {
+      "en" : "Here, we are dealing with the informational object (the MusicalExpression), not the actually \"published\" score. This may be, for example, the product of an arrangement process."
+    },
+    "attributes" : [ "external" ],
+    "id" : "148",
+    "superClasses" : [ "112" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#F",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F",
+      "en" : "F",
+      "it" : "Fa"
+    },
+    "comment" : {
+      "en" : "Note F"
+    },
+    "id" : "79",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#G",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "G",
+      "en" : "G",
+      "it" : "Sol"
+    },
+    "comment" : {
+      "en" : "Note G"
+    },
+    "id" : "55",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#D",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "D",
+      "en" : "D",
+      "it" : "Re"
+    },
+    "comment" : {
+      "en" : "Note D"
+    },
+    "id" : "151",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#E",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E",
+      "en" : "E",
+      "it" : "Mi"
+    },
+    "comment" : {
+      "en" : "Note E"
+    },
+    "id" : "152",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/AnalogSignal",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnalogSignal",
+      "en" : "Analog Signal"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "36" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "119", "103", "93", "112", "26", "92", "97" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "155"
+  }, {
+    "instances" : 0,
+    "union" : [ "123", "36", "92", "97" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "28"
+  }, {
+    "instances" : 0,
+    "union" : [ "148", "97" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "156"
+  }, {
+    "instances" : 0,
+    "union" : [ "148", "97" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/MusicalWork",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicalWork",
+      "en" : "Musical Work"
+    },
+    "subClasses" : [ "123" ],
+    "comment" : {
+      "en" : "Distinct intellectual or artistic musical creation. From the FRBR final report: A work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work. For example: work #1 J. S. Bach's The art of the fugue"
+    },
+    "attributes" : [ "external" ],
+    "id" : "97",
+    "superClasses" : [ "45" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "119", "26" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "164",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#Voice",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Voice",
+      "en" : "Voice"
+    },
+    "intersection" : [ "52" ],
+    "comment" : {
+      "en" : "One of the multiple voices that can constitutes a single Instrument Part and are therefore represented on the same staff."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "50",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "169",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPatternConstituent",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RhythmicPatternConstituent",
+      "en" : "Rhythmic Pattern Constituent"
+    },
+    "comment" : {
+      "en" : "The constituent of a rhythmic pattern. It has a cardinality that defines the position of the constituent within the pattern."
+    },
+    "id" : "67",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#Chord",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Chord",
+      "en" : "Chord"
+    },
+    "subClasses" : [ "186" ],
+    "comment" : {
+      "en" : "Any harmonic set of pitches/frequencies consisting of multiple notes (also called \"pitches\") that are heard as if sounding simultaneously."
+    },
+    "id" : "22",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SymbolicEvent",
+      "en" : "Symbolic Event"
+    },
+    "subClasses" : [ "56", "145", "146", "4", "147", "79", "55", "151", "152" ],
+    "comment" : {
+      "en" : "Any kind of note and rest that can be found in a music score."
+    },
+    "id" : "13",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#DoubleFlat",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DoubleFlat",
+      "en" : "Double Flat"
+    },
+    "comment" : {
+      "en" : "An accidental that lowers a note by a whole tone."
+    },
+    "id" : "212",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#TimeLine",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeLine",
+      "en" : "TimeLine"
+    },
+    "subClasses" : [ "219", "105" ],
+    "comment" : {
+      "en" : "Represents a linear and coherent piece of time -- can be either abstract (such as the one behind a score) or concrete (such as the universal time line).\nTwo timelines can be mapped using timeline maps."
+    },
+    "attributes" : [ "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicologicalFeature",
+      "en" : "Features"
+    },
+    "subClasses" : [ "44", "109", "93", "112", "114", "9", "26", "18", "119", "103", "33", "83", "85", "29", "90", "92", "97" ],
+    "comment" : {
+      "en" : "A musicological feature is defined as any element useful for musicological analysis. This analysis can be of different types, and intertwine with other fields of research, such as psychoacoustics. All typical elements of a score are considered musicological features, together with a series of previously extracted features that group these elements together."
+    },
+    "id" : "45"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RhythmicPattern",
+      "en" : "Rhythmic Pattern"
+    },
+    "subClasses" : [ "67" ],
+    "comment" : {
+      "en" : "A pattern consisting of the Symbolic Duration related to the succession of Symbolic Events that are repeated within a musical piece."
+    },
+    "id" : "7",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicDuration",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SymbolicDuration",
+      "en" : "Symbolic Duration"
+    },
+    "comment" : {
+      "en" : "Defines the duration of the note, according to the music theory relative durations."
+    },
+    "id" : "42",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#DoubleSharp",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DoubleSharp",
+      "en" : "Double Sharp"
+    },
+    "comment" : {
+      "en" : "An accidental that raises a note by a whole tone."
+    },
+    "id" : "228",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InstrumentPart",
+      "en" : "Instrument Part"
+    },
+    "subClasses" : [ "50" ],
+    "intersection" : [ "18" ],
+    "comment" : {
+      "en" : "The part of a score that contains the notes played by a specific instrument. It is defined exactly by one staff and refers to the music material that can be found on it."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "52",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#EmotionType",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EmotionType",
+      "en" : "Emotion"
+    },
+    "comment" : {
+      "en" : "An type of emotion defined on the Russell's circumplex model of affection."
+    },
+    "id" : "109",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/MusicArtist",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicArtist",
+      "en" : "Music Artist"
+    },
+    "comment" : {
+      "en" : "A person or a group of people (or a computer :-) ), whose musical creative work shows sensitivity and imagination"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "114" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Arrangement",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Arrangement",
+      "en" : "Arrangement"
+    },
+    "comment" : {
+      "en" : "An arrangement event. Takes as agent the arranger, and produces a score (informational object, not the actually published score)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "119",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "276",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#Structure",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Structure",
+      "en" : "Structure"
+    },
+    "comment" : {
+      "en" : "The structure of the music piece. It is composed by different segments that can in turn be organised in patterns (e.g. A-B-C-B-C-D)."
+    },
+    "id" : "9",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#ChordVoicing",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChordVoicing",
+      "en" : "Chord Voice"
+    },
+    "intersection" : [ "22" ],
+    "comment" : {
+      "en" : "The voicing opf a chord, which defines the simultaneous vertical placement of notes in relation to each other."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "186",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "290",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "305",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Recording",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recording",
+      "en" : "Recording"
+    },
+    "comment" : {
+      "en" : "A recording event. Takes a sound as a factor to produce a signal (analog or digital). The location of such events (if any) is the actual location of the corresponding microphone or the \"recording device\"."
+    },
+    "attributes" : [ "external" ],
+    "id" : "103",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MelodicPattern",
+      "en" : "Melodic Pattern"
+    },
+    "subClasses" : [ "4" ],
+    "comment" : {
+      "en" : "A pattern consisting of the succession of Symbolic Events that are repeated several times within a music piece."
+    },
+    "id" : "5",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "313",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPatternConstituent",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntervalPatternConstituent",
+      "en" : "Interval Pattern Constituent"
+    },
+    "intersection" : [ "11" ],
+    "comment" : {
+      "en" : "The constituent of an interval pattern. It has a cardinality that defines the position of the constituent within the pattern."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "1",
+    "superClasses" : [ "11", "17" ]
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#TimeLineMap",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeLineMap",
+      "en" : "Time LineMap"
+    },
+    "comment" : {
+      "en" : "Allows to map two time lines together."
+    },
+    "attributes" : [ "external" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#AbstractTimeLine",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AbstractTimeLine",
+      "en" : "Abstract Time Line"
+    },
+    "comment" : {
+      "en" : "Abstract time lines may be used as a backbone for Score, Works, ...\nThis allows for TimeLine maps to relate works to a given\nperformance (this part was played at this time)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "219",
+    "superClasses" : [ "106" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MelodicInterval",
+      "en" : "Melodic Interval"
+    },
+    "subClasses" : [ "10", "1" ],
+    "comment" : {
+      "en" : "An interval that is created between a note and the following one."
+    },
+    "id" : "11",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Sound",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sound",
+      "en" : "Sound"
+    },
+    "comment" : {
+      "en" : "A subclass of MusicalExpression, representing a sound. Realisation of a MusicalWork during a musical Performance."
+    },
+    "attributes" : [ "external" ],
+    "id" : "83",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/MusicalExpression",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicalExpression",
+      "en" : "Musical Expression"
+    },
+    "subClasses" : [ "36", "148" ],
+    "comment" : {
+      "en" : "The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, etc., or any combination of such forms. For example: Work #1 Franz Schubert's Trout quintet * Expression #1 the composer's score * Expression #2 sound issued from the performance by the Amadeus Quartet and Hephzibah Menuhin on piano * Expression #3 sound issued from the performance by the Cleveland Quartet and Yo-Yo Ma on the cello * . . . . The Music Ontology defines the following sub-concepts of a MusicalExpression, which should be used instead of MusicalExpression itself: Score (the result of an arrangement), Sound (produced during a performance), Signal. However, it is possible to stick to FRBR and bypass the worflow mechanism this ontology defines by using the core FRBR properties on such objects. But it is often better to use events to interconnect such expressions (allowing to go deeply into the production process - `this performer was playing this particular instrument at that particular time')."
+    },
+    "attributes" : [ "external" ],
+    "id" : "112",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Composition",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Composition",
+      "en" : "Composition"
+    },
+    "comment" : {
+      "en" : "A composition event. Takes as agent the composer himself. It produces a MusicalWork, or a MusicalExpression (when the initial \"product\" is a score, for example), or both."
+    },
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#Sharp",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sharp",
+      "en" : "Sharp"
+    },
+    "comment" : {
+      "en" : "An accidental that raises a note by a semitone."
+    },
+    "id" : "60",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#Accidental",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Accidental",
+      "en" : "Accidental"
+    },
+    "subClasses" : [ "228", "41", "60", "212" ],
+    "comment" : {
+      "en" : "Defines the pitch modifiers of the note, in particular: demisharp , doublesharp , sharp , flat , demiflat , sesquiflat , sesquisharp , doubleflat."
+    },
+    "id" : "58",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#Flat",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Flat",
+      "en" : "Flat"
+    },
+    "comment" : {
+      "en" : "An accidental that lowers a note by a semitone."
+    },
+    "id" : "41",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Performance",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "http://purl.org/ontology/mo/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Performance",
+      "en" : "Perormance"
+    },
+    "comment" : {
+      "en" : "A performance event. It might include as agents performers, engineers, conductors, or even listeners. It might include as factors a score, a MusicalWork, musical instruments. It might produce a sound"
+    },
+    "attributes" : [ "external" ],
+    "id" : "92",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPatternConstituent",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MelodicPatternConstituent",
+      "en" : "Melodic Pattern Constituent"
+    },
+    "intersection" : [ "13" ],
+    "comment" : {
+      "en" : "The constituent of a melodic pattern. It has a cardinality that defines the position of the constituent within the pattern."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "4",
+    "superClasses" : [ "5", "13" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/PublishedScore",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublishedScore",
+      "en" : "Published Score"
+    },
+    "comment" : {
+      "en" : "A published score (subclass of MusicalManifestation)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "95",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#Segment",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Segment",
+      "en" : "Segment"
+    },
+    "comment" : {
+      "en" : "A constituent part of the music structure. Musical segments are defined according to the similarity of the harmonic and melodic material that constitutes them."
+    },
+    "id" : "33",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#Dynamic",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dynamic",
+      "en" : "Dynamics"
+    },
+    "comment" : {
+      "en" : "Dynamics are instructions in musical notation to the performer about hearing the loudness of a note or phrase."
+    },
+    "id" : "48",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#Rest",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rest",
+      "en" : "Rest"
+    },
+    "comment" : {
+      "en" : "A musical notation sign that indicates the absence of a sound."
+    },
+    "id" : "56",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#DiscreteTimeLine",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiscreteTimeLine",
+      "en" : "Discrete TimeLine"
+    },
+    "comment" : {
+      "en" : "A discrete time line (like the time line backing a digital signal)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "105",
+    "superClasses" : [ "106" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Genre",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Genre",
+      "en" : "Genre"
+    },
+    "comment" : {
+      "en" : "An expressive style of music.\nAny taxonomy can be plug-in here. You can either define a genre by yourself, like this:\n:mygenre a mo:Genre; dc:title \"electro rock\".\nOr you can refer to a DBPedia genre (such as http://dbpedia.org/resource/Baroque_music), allowing semantic web clients to access easily really detailed structured information about the genre you are refering to."
+    },
+    "attributes" : [ "external" ],
+    "id" : "90",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "en" : "Agent"
+    },
+    "subClasses" : [ "25" ],
+    "comment" : {
+      "en" : "An agent (eg. person, group, software or physical artifact)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "114",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiscreteInterval",
+      "en" : "Discrete Interval"
+    },
+    "comment" : {
+      "en" : "An interval defined on a discrete timeline, like the one backing a digital signal."
+    },
+    "attributes" : [ "external" ],
+    "id" : "87",
+    "superClasses" : [ "120" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "160",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "338",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "140", "45" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "369"
+  }, {
+    "instances" : 0,
+    "union" : [ "141", "45" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "370"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "183",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "321",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "136",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "192",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "376",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "366",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "232",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "168",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Record",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Record",
+      "en" : "Record"
+    },
+    "comment" : {
+      "en" : "A published record (manifestation which first aim is to render the product of a recording)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "94",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SymbolicRepresentation",
+      "en" : "Symbolic Representation"
+    },
+    "subClasses" : [ "11", "17", "22", "48", "5", "58", "52", "31", "7", "42", "13" ],
+    "comment" : {
+      "en" : "A symbolic representation is defined as any kind of representation aimed at representing the music material (e.g. MIDI, Music XML, etc.)."
+    },
+    "id" : "18",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#AbstractInterval",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AbstractInterval",
+      "en" : "Abstract Interval"
+    },
+    "comment" : {
+      "en" : "An interval defined on an abstract time-line."
+    },
+    "attributes" : [ "external" ],
+    "id" : "121",
+    "superClasses" : [ "120" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Signal",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Signal",
+      "en" : "Signal"
+    },
+    "subClasses" : [ "35", "39" ],
+    "comment" : {
+      "en" : "A subclass of MusicalExpression, representing a signal, for example a master signal produced by a performance and a recording."
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "112" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Movement",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Movement",
+      "en" : "Movement"
+    },
+    "comment" : {
+      "en" : "A movement is a self-contained part of a musical work. While individual or selected movements from a composition are sometimes performed separately, a performance of the complete work requires all the movements to be performed in succession. Often a composer attempts to interrelate the movements thematically, or sometimes in more subtle ways, in order that the individual movements exert a cumulative effect. In some forms, composers sometimes link the movements, or ask for them to be played without a pause between them."
+    },
+    "attributes" : [ "external" ],
+    "id" : "123",
+    "superClasses" : [ "97" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "8",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "16",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "19",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "162",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "163",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "165",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "166",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "167",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "170",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "173",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "174",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "175",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "176",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "177",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "178",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "179",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "180",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "181",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "193",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "198",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "199",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "202",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "203",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "204",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "209",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "210",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "214",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "215",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "216",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "217",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "218",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "220",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "221",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "222",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "223",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "224",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "225",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "226",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "227",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "229",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "230",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "231",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "233",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "234",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "236",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "237",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "239",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "240",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "241",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "242",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "243",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "244",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "246",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "247",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "248",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "249",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "250",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "251",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "252",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "253",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "254",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "255",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "256",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "257",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "258",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "259",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "260",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "262",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "263",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "264",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "265",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "266",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "267",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "268",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "269",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "185",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "270",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "271",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "272",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "273",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "274",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "275",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "277",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "278",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "279",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "280",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "281",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "282",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "283",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "284",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "285",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "286",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "287",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "288",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "289",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "291",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "292",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "293",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "294",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "295",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "296",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "298",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "299",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "300",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "301",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "302",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "303",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "304",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "306",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "307",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "308",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "309",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "310",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "311",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "297",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "312",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "314",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "315",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "316",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "317",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "318",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "319",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "320",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "322",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "323",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "324",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "325",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "327",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "328",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "330",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "331",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "332",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "326",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "333",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "334",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "245",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "335",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "336",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "337",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "339",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "340",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "341",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "342",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "343",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "344",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "345",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "346",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "347",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "348",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "349",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "350",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "351",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "261",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "352",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "353",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "208",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "354",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "355",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "356",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "357",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "358",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "359",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "360",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "361",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "362",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "363",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "364",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "365",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "367",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "368",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "371",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "372",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "373",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "374",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "375",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "329",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "235",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "377",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "379",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "378",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "196",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "381",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "382",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "383",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "384",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "385",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "386",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "387",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "388",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "389",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "238",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "390",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "391",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "392",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "380",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "393",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "394",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "395",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalPatternCardinality",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasIntervalPatternCardinality",
+      "en" : "has interval pattern cardinality"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "functional", "allValues" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "7",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "9",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasOctave",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasOctave",
+      "en" : "has octave"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "12"
+  }, {
+    "range" : "5",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "4",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalType",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasIntervalType",
+      "en" : "has interval type"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "functional", "allValues" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasProgressionCardinality",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasProgressionCardinality",
+      "en" : "has progression cardinality"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isComposerOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "isComposerOf",
+      "en" : "is composer of"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "Inverse property of mo:composer."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/key",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "key",
+      "en" : "key"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Indicated the key used by the musicians during a performance, or the key of a MusicalWork. Any of 24 major or minor diatonic scales that provide the tonal framework for a piece of music."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "18",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "33",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "5",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "36",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "42",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "18",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "31",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "18",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isSymbolicEventOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "isSymbolicEventOf",
+      "en" : "is symbolic event of"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Associates a Symbolic Event to the belonging Voice."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "52",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "18",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "56",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "18",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "60",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "18",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "7",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "18",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "9",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "18",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "67",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "18",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "4",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#belongsToIntervalPattern",
+    "inverse" : "71",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "belongsToIntervalPattern",
+      "en" : "belongs to interval pattern"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Associates a Melodic Interval to a Melodic Pattern the interval belongs to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasDissonance",
+    "inverse" : "73",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasDissonance",
+      "en" : "has dissonance"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Associates a Melodic Interval to a Dissonance."
+    },
+    "attributes" : [ "functional", "inverse functional", "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#intervalCreatedBy",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "intervalCreatedBy",
+      "en" : "interval created by"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Associates a Melodic Interval to the Symbolic Events that generates it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#constitutesIntervalPattern",
+    "inverse" : "76",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "constitutesIntervalPattern",
+      "en" : "constitutes interval pattern"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Associates an Interval Pattern Constituent to the belonging Interval Pattern. Inverse of hasIntervalPatternConstituent property."
+    },
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "range" : "18",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "55",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "45",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "45",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "45",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/time",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "time",
+      "en" : "time"
+    },
+    "domain" : "39",
+    "comment" : {
+      "en" : "Associates a Signal to a time object - its actual domain,"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "45",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "45",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "45",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "range" : "45",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "range" : "7",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "52",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasChordLabel",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "hasChordLabel",
+      "en" : "has chord label"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "100"
+  }, {
+    "range" : "45",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "106",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "range" : "45",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "range" : "45",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "45",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "45",
+    "domain" : "112",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "45",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "range" : "45",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "45",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "45",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "45",
+    "domain" : "119",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isSymbolicRepresentationOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "isSymbolicRepresentationOf",
+      "en" : "is symbolic representation of"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Associates the Symbolic Representation to the belonging Movement."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#segmentDefinedBy",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "segmentDefinedBy",
+      "en" : "segment defined by"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Associates the Segment of a piece to the Discrete Interval defined on a Discrete TimeLine."
+    },
+    "attributes" : [ "object" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/published_as",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "published_as",
+      "en" : "published as"
+    },
+    "domain" : "112",
+    "comment" : {
+      "en" : "Links a musical expression (e.g. a signal or a score) to one of its manifestations (e.g. a track on a particular record or a published score)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#definesSegment",
+    "inverse" : "128",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "definesSegment",
+      "en" : "defines segment"
+    },
+    "domain" : "87",
+    "comment" : {
+      "en" : "Links an interval defined on a TimeLine to the segment that defines the interval."
+    },
+    "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMeasure",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "136",
+    "label" : {
+      "IRI-based" : "hasMeasure",
+      "en" : "has measure"
+    },
+    "cardinality" : "1",
+    "domain" : "31",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/arranged_in",
+    "inverse" : "139",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "119",
+    "label" : {
+      "IRI-based" : "arranged_in",
+      "en" : "arranged in"
+    },
+    "domain" : "97",
+    "comment" : {
+      "en" : "Associates a work to an arrangement event where it was arranged"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/composed_in",
+    "inverse" : "150",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "composed_in",
+      "en" : "composed in"
+    },
+    "domain" : "97",
+    "comment" : {
+      "en" : "Associates a MusicalWork to the Composition event pertaining to its creation. For example, I might use this property to associate the Magic Flute to its composition event, occuring during 1782 and having as a mo:composer Mozart."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#domainTimeLine",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "domainTimeLine",
+      "en" : "domain timeline"
+    },
+    "domain" : "154",
+    "comment" : {
+      "en" : "Associates a timeline map to its domain timeline."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "153"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasStaff",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "160",
+    "label" : {
+      "IRI-based" : "hasStaff",
+      "en" : "has staff"
+    },
+    "domain" : "52",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "159"
+  }, {
+    "range" : "33",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "range" : "9",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasRhythmicPatternCardinality",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "164",
+    "label" : {
+      "IRI-based" : "hasRhythmicPatternCardinality",
+      "en" : "has rhythmic pattern cardinality"
+    },
+    "domain" : "67",
+    "attributes" : [ "datatype", "functional", "allValues" ],
+    "id" : "163"
+  }, {
+    "range" : "9",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "42",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMidiVelocity",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "168",
+    "label" : {
+      "IRI-based" : "hasMidiVelocity",
+      "en" : "has midi velocity"
+    },
+    "domain" : "48",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "167"
+  }, {
+    "range" : "7",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "170"
+  }, {
+    "range" : "9",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "60",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "range" : "5",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "33",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "7",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "9",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "67",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMelodicPatternCardinality",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "169",
+    "label" : {
+      "IRI-based" : "hasMelodicPatternCardinality",
+      "en" : "has melodic pattern cardinality"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "functional", "allValues" ],
+    "id" : "179"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDurationOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isDurationOf",
+      "en" : "is duration of"
+    },
+    "domain" : "42",
+    "comment" : {
+      "en" : "Associates the Symbolic Duration to the belonging Symbolic Event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "180"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasDissonanceCount",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "hasDissonanceCount",
+      "en" : "has dissonance count"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype" ],
+    "id" : "181"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasRhythmicPatternCardinality",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "183",
+    "label" : {
+      "IRI-based" : "hasRhythmicPatternCardinality",
+      "en" : "has rhythmic pattern cardinality"
+    },
+    "domain" : "67",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "182"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasDynamic",
+    "inverse" : "185",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasDynamic",
+      "en" : "has dynamic"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Associates a Symbolic Event to its Dynamic."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/produced_work",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "produced_work",
+      "en" : "produced work"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Associates a composition event to the produced MusicalWork. For example, this property could link the event corresponding to the composition of the Magic Flute in 1782 to the Magic Flute musical work itself. This musical work can then be used in particular performances."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "33",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "67",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "7",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "11",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMeasureOffset",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "192",
+    "label" : {
+      "IRI-based" : "hasMeasureOffset",
+      "en" : "has measure offset"
+    },
+    "cardinality" : "1",
+    "domain" : "31",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "191"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasRhythmicFigure",
+    "inverse" : "194",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasRhythmicFigure",
+      "en" : "has rhythmic figure"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Associates a Rhythmic Pattern with the Duration that constitutes the pattern."
+    },
+    "attributes" : [ "object" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/recorded_as",
+    "inverse" : "196",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "recorded_as",
+      "en" : "recorded as"
+    },
+    "domain" : "92",
+    "comment" : {
+      "en" : "This is a shortcut property, allowing to bypass all the Sound/Recording steps. This property allows to directly link a Performance to the recorded Signal. This is recommended for \"normal\" users. However, advanced users wanting to express things such as the location of the microphone will have to create this shortcut as well as the whole workflow, in order to let the \"normal\" users access simply the, well, simple information:-) ."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#endsAtDuration",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "endsAtDuration",
+      "en" : "ends at duration"
+    },
+    "domain" : "144",
+    "attributes" : [ "external", "datatype", "functional" ],
+    "id" : "197"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isPositionOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isPositionOf",
+      "en" : "is position of"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Associates the Position to the belonging Symbolic Event."
+    },
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "198"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalPatternCardinality",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "hasIntervalPatternCardinality",
+      "en" : "has interval pattern cardinality"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "199"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalPatternConstituent",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasIntervalPatternConstituent",
+      "en" : "has interval pattern constituent"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Associates a Interval Pattern to its constituents."
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "range" : "4",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "17",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "5",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "range" : "44",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "range" : "109",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "range" : "7",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "152",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasInstrumentPart",
+    "inverse" : "208",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasInstrumentPart",
+      "en" : "has part"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Associates a Symbolic Representationto the Instrment Parts it composed of."
+    },
+    "attributes" : [ "object" ],
+    "id" : "207"
+  }, {
+    "range" : "151",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "range" : "79",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "56",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/produced_signal",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "produced_signal",
+      "en" : "produced signal"
+    },
+    "domain" : "103",
+    "comment" : {
+      "en" : "Associates a Recording to the outputted signal."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "213"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasPosition",
+    "inverse" : "198",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasPosition",
+      "en" : "has position"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Associates the Symbolic Event with its Position."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "152",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "range" : "79",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "216"
+  }, {
+    "range" : "55",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "217"
+  }, {
+    "range" : "55",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "range" : "151",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "220"
+  }, {
+    "range" : "56",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
+  }, {
+    "range" : "146",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "222"
+  }, {
+    "range" : "52",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "223"
+  }, {
+    "range" : "13",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "224"
+  }, {
+    "range" : "50",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "225"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isComposedByChord",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "isComposedByChord",
+      "en" : "is composed by chord"
+    },
+    "domain" : "44",
+    "comment" : {
+      "en" : "Associates a Chord Progrression to its constituent Chords."
+    },
+    "attributes" : [ "object" ],
+    "id" : "226"
+  }, {
+    "range" : "109",
+    "domain" : "186",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "227"
+  }, {
+    "range" : "152",
+    "domain" : "151",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "229"
+  }, {
+    "range" : "9",
+    "domain" : "186",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "230"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMidiPitch",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "232",
+    "label" : {
+      "IRI-based" : "hasMidiPitch",
+      "en" : "has midi pitch"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "231"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDefinedAtTimeInterval",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "isDefinedAtTimeInterval",
+      "en" : "is defined at time interval"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Associates the Position of a Symbolic Event to the Interval defined on a TimeLine."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "233"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasFeature",
+    "inverse" : "235",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasFeature",
+      "en" : "has feature"
+    },
+    "domain" : "97",
+    "comment" : {
+      "en" : "Associates the mo:Musical Work with the main class of the whole HaMSE Ontology, namely MusicologicalFeatures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "234"
+  }, {
+    "range" : "5",
+    "domain" : "186",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "236"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#constitutesRhythmicPattern",
+    "inverse" : "238",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "constitutesRhythmicPattern",
+      "en" : "constitutes rhythmic pattern"
+    },
+    "domain" : "67",
+    "comment" : {
+      "en" : "Relates a Rhythmic Pattern Constituent to the belonging Rhythmic Pattern."
+    },
+    "attributes" : [ "object" ],
+    "id" : "237"
+  }, {
+    "range" : "17",
+    "domain" : "186",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "239"
+  }, {
+    "range" : "7",
+    "domain" : "186",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "240"
+  }, {
+    "range" : "11",
+    "domain" : "186",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "241"
+  }, {
+    "range" : "7",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "range" : "5",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "243"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#belongsToChord",
+    "inverse" : "245",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "belongsToChord",
+      "en" : "belongs to chord"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Associates the Symbolic Event to the Chord. It is the inverse property of hasChordNote."
+    },
+    "attributes" : [ "object" ],
+    "id" : "244"
+  }, {
+    "range" : "33",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "246"
+  }, {
+    "range" : "109",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "247"
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#beginsAtDuration",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "beginsAtDuration",
+      "en" : "begins at duration"
+    },
+    "domain" : "142",
+    "attributes" : [ "external", "datatype", "functional" ],
+    "id" : "248"
+  }, {
+    "range" : "186",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "249"
+  }, {
+    "range" : "17",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "250"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#definesPositionOf",
+    "inverse" : "233",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "definesPositionOf",
+      "en" : "defines position of"
+    },
+    "domain" : "120",
+    "comment" : {
+      "en" : "Associates the Interval defined on a TimeLine with the Position of the Symbolic Event played at this specific interval."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "251"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalType",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "hasIntervalType",
+      "en" : "has interval type"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "252"
+  }, {
+    "range" : "9",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "253"
+  }, {
+    "range" : "4",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "254"
+  }, {
+    "range" : "10",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "255"
+  }, {
+    "range" : "1",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "256"
+  }, {
+    "range" : "67",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "257"
+  }, {
+    "range" : "1",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "258"
+  }, {
+    "range" : "67",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "259"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/performance_of",
+    "inverse" : "261",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "156",
+    "label" : {
+      "IRI-based" : "performance_of",
+      "en" : "performance of"
+    },
+    "domain" : "92",
+    "comment" : {
+      "en" : "Associates a Performance to a musical work or an arrangement that is being used as a factor in it. For example, I might use this property to attach the Magic Flute musical work to a particular Performance."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "260"
+  }, {
+    "range" : "33",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "262"
+  }, {
+    "range" : "9",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "263"
+  }, {
+    "range" : "52",
+    "domain" : "228",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "264"
+  }, {
+    "range" : "48",
+    "domain" : "212",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "265"
+  }, {
+    "range" : "31",
+    "domain" : "228",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "266"
+  }, {
+    "range" : "42",
+    "domain" : "228",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "267"
+  }, {
+    "range" : "42",
+    "domain" : "212",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "268"
+  }, {
+    "range" : "31",
+    "domain" : "212",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "269"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDynamicOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isDynamicOf",
+      "en" : "is dynamic of"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "Associates the Dynamic to the belonging Symbolic Event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "185"
+  }, {
+    "range" : "52",
+    "domain" : "212",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "270"
+  }, {
+    "range" : "41",
+    "domain" : "228",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "271"
+  }, {
+    "range" : "60",
+    "domain" : "212",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "272"
+  }, {
+    "range" : "60",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "273"
+  }, {
+    "range" : "60",
+    "domain" : "228",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "274"
+  }, {
+    "range" : "7",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "275"
+  }, {
+    "range" : "41",
+    "domain" : "212",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "277"
+  }, {
+    "range" : "228",
+    "domain" : "212",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "278"
+  }, {
+    "range" : "5",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "279"
+  }, {
+    "range" : "9",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "280"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasDissonanceCount",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "276",
+    "label" : {
+      "IRI-based" : "hasDissonanceCount",
+      "en" : "has dissonance count"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "281"
+  }, {
+    "range" : "56",
+    "domain" : "151",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "282"
+  }, {
+    "range" : "79",
+    "domain" : "151",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "283"
+  }, {
+    "range" : "109",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "284"
+  }, {
+    "range" : "55",
+    "domain" : "151",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "285"
+  }, {
+    "range" : "11",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "286"
+  }, {
+    "range" : "33",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "287"
+  }, {
+    "range" : "67",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "288"
+  }, {
+    "range" : "5",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "289"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isVoiceOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "isVoiceOf",
+      "en" : "is voice of"
+    },
+    "domain" : "50",
+    "comment" : {
+      "en" : "Associates o Voice to the belonging Instrument Part."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "291"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isStructureOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "isStructureOf",
+      "en" : "is structure of"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Associates the Structure to the Musical Work."
+    },
+    "attributes" : [ "object" ],
+    "id" : "292"
+  }, {
+    "range" : "1",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "293"
+  }, {
+    "range" : "17",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "294"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/opus",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "132",
+    "label" : {
+      "IRI-based" : "opus",
+      "en" : "opus"
+    },
+    "domain" : "97",
+    "comment" : {
+      "en" : "Used to define a creative work, especially a musical composition numbered to designate the order of a composer's works."
+    },
+    "attributes" : [ "external", "datatype", "functional" ],
+    "id" : "295"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/performed",
+    "inverse" : "297",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "performed",
+      "en" : "performed"
+    },
+    "domain" : "114",
+    "comment" : {
+      "en" : "Relates agents to the performances they were performing in"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "296"
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#timeline",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "timeline",
+      "en" : "timeline"
+    },
+    "domain" : "120",
+    "comment" : {
+      "en" : "Relates an interval or an instant to the timeline on which it is defined.\n\nThe 29th of August, 2007 would be linked through this property to the universal timeline, whereas\n\"from 2s to 5s on this particular signal\" would be defined on the signal' timeline."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "298"
+  }, {
+    "range" : "55",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "299"
+  }, {
+    "range" : "56",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "300"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#belongsToRussellsQuadrant",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "290",
+    "label" : {
+      "IRI-based" : "belongsToRussellsQuadrant",
+      "en" : "belongs to Russell's quadrant"
+    },
+    "domain" : "109",
+    "attributes" : [ "datatype", "functional", "allValues" ],
+    "id" : "301"
+  }, {
+    "range" : "7",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "302"
+  }, {
+    "range" : "13",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "303"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#belongsToMelodicPattern",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "belongsToMelodicPattern",
+      "en" : "belongs to melodic pattern"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Associates a Symbolic Event to a Melodic Pattern."
+    },
+    "attributes" : [ "object" ],
+    "id" : "304"
+  }, {
+    "range" : "79",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "306"
+  }, {
+    "range" : "60",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "307"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMidiVelocity",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "305",
+    "label" : {
+      "IRI-based" : "hasMidiVelocity",
+      "en" : "has midi velocity"
+    },
+    "domain" : "48",
+    "attributes" : [ "datatype", "functional", "allValues" ],
+    "id" : "308"
+  }, {
+    "range" : "31",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "309"
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#rangeTimeLine",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "range" : "219",
+    "label" : {
+      "IRI-based" : "rangeTimeLine",
+      "en" : "range timeline"
+    },
+    "domain" : "154",
+    "comment" : {
+      "en" : "Associates a timeline map to its range timeline."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "310"
+  }, {
+    "range" : "41",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "311"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/performer",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "performer",
+      "en" : "performer"
+    },
+    "domain" : "92",
+    "comment" : {
+      "en" : "Relates a performance to the performers involved"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "297"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasLiteralDynamic",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "313",
+    "label" : {
+      "IRI-based" : "hasLiteralDynamic",
+      "en" : "has literal dynamic"
+    },
+    "domain" : "48",
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "312"
+  }, {
+    "range" : "48",
+    "domain" : "228",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "314"
+  }, {
+    "range" : "42",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "315"
+  }, {
+    "range" : "9",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "316"
+  }, {
+    "range" : "4",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "317"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalCount",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "hasIntervalCount",
+      "en" : "has interval count"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "318"
+  }, {
+    "range" : "56",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "319"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasLiteralDynamic",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "321",
+    "label" : {
+      "IRI-based" : "hasLiteralDynamic",
+      "en" : "has literal dynamic"
+    },
+    "domain" : "48",
+    "attributes" : [ "datatype" ],
+    "id" : "320"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#createsInterval",
+    "inverse" : "74",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "createsInterval",
+      "en" : "creates interval"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Associates two consequent Symbolic Events with the Melodic Interval they create."
+    },
+    "attributes" : [ "object" ],
+    "id" : "322"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/instrument",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "instrument",
+      "en" : "instrument"
+    },
+    "domain" : "92",
+    "comment" : {
+      "en" : "Relates a performance to a musical instrument involved"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "323"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/arrangement_of",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "arrangement_of",
+      "en" : "arrangement of"
+    },
+    "domain" : "119",
+    "comment" : {
+      "en" : "Associates an arrangement event to a work"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#constitutesProgression",
+    "inverse" : "226",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "constitutesProgression",
+      "en" : "constitutes progression"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "Associates a Chord to the Chord Progression it belongs to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "324"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#constitutesMelodicPattern",
+    "inverse" : "326",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "constitutesMelodicPattern",
+      "en" : "constitutes melodic pattern"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Associates a Melodic Pattern Constituent to the belonging Melodic Pattern."
+    },
+    "attributes" : [ "object" ],
+    "id" : "325"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasVoice",
+    "inverse" : "291",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasVoice",
+      "en" : "has voice"
+    },
+    "domain" : "52",
+    "comment" : {
+      "en" : "Associates the Instrument Part with the different Voices the part may contain."
+    },
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "327"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasChordVoice",
+    "inverse" : "329",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "186",
+    "label" : {
+      "IRI-based" : "hasChordVoice",
+      "en" : "has chord voice"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "Associates a Chord to its Voicing."
+    },
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "328"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/composer",
+    "inverse" : "24",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "composer",
+      "en" : "composer"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Associates a composition event to the actual composer. For example, this property could link the event corresponding to the composition of the Magic Flute in 1782 to Mozart himself (who obviously has a FOAF profile:-) )."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "330"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/conductor",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "conductor",
+      "en" : "conductor"
+    },
+    "domain" : "92",
+    "comment" : {
+      "en" : "Relates a performance to the conductor involved"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "331"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/recording_of",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "recording_of",
+      "en" : "recording of"
+    },
+    "domain" : "103",
+    "comment" : {
+      "en" : "Associates a Recording event to a physical Sound being recorded. For example, I might use this property to associate a given recording, done using my cell phone, to the sound produced by a particular performance of the magic flute."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "332"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMelodicPatternConstituent",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasMelodicPatternConstituent",
+      "en" : "has melodic pattern constituent"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Associates a Melodic Pattern to its constituents."
+    },
+    "attributes" : [ "object" ],
+    "id" : "326"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDefinedBySegment",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isDefinedBySegment",
+      "en" : "has segment"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Associates a Segment to the the Structure that is defined by such segment."
+    },
+    "attributes" : [ "object" ],
+    "id" : "333"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/produced_score",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "148",
+    "label" : {
+      "IRI-based" : "produced_score",
+      "en" : "produced_score"
+    },
+    "domain" : "158",
+    "comment" : {
+      "en" : "Associates an arrangement or a composition event to a score product (score here does not refer to a published score, but more an abstract arrangement of a particular work)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "334"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasChordNote",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasChordNote",
+      "en" : "has chord note"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "Associates a Chord to the Symbolic Events it is composed of."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "245"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isDissonanceOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isDissonanceOf",
+      "en" : "is dissonance of"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Associates a Dissonance to the Melodic Interval that creates such dissonance."
+    },
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/genre",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "genre",
+      "en" : "genre"
+    },
+    "domain" : "155",
+    "comment" : {
+      "en" : "Associates an event (like a performance or a recording) to a particular musical genre. Further version of this property may also include works and scores in the domain."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "335"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasClef",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "137",
+    "label" : {
+      "IRI-based" : "hasClef",
+      "en" : "has clef"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "336"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasVoiceNumber",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "338",
+    "label" : {
+      "IRI-based" : "hasVoiceNumber",
+      "en" : "has voice number"
+    },
+    "domain" : "186",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "337"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/movement_number",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "movement_number",
+      "en" : "movement number"
+    },
+    "domain" : "123",
+    "comment" : {
+      "en" : "Indicates the position of a movement in a musical work."
+    },
+    "attributes" : [ "external", "datatype", "functional" ],
+    "id" : "339"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#definesStructure",
+    "inverse" : "333",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "definesStructure",
+      "en" : "defines structure"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Associates a Structure to its constituent Segments."
+    },
+    "attributes" : [ "object" ],
+    "id" : "340"
+  }, {
+    "range" : "13",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "341"
+  }, {
+    "range" : "13",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "342"
+  }, {
+    "range" : "13",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "343"
+  }, {
+    "range" : "13",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "344"
+  }, {
+    "range" : "13",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "345"
+  }, {
+    "range" : "13",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "346"
+  }, {
+    "range" : "13",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "347"
+  }, {
+    "range" : "13",
+    "domain" : "151",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "348"
+  }, {
+    "range" : "13",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "349"
+  }, {
+    "range" : "106",
+    "domain" : "219",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "350"
+  }, {
+    "range" : "114",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "351"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/performed_in",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "performed_in",
+      "en" : "performance in"
+    },
+    "domain" : "157",
+    "comment" : {
+      "en" : "Associates a Performance to a musical work or an arrangement that is being used as a factor in it. For example, I might use this property to attach the Magic Flute musical work to a particular Performance."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "261"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/produced_sound",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "produced_sound",
+      "en" : "produced sound"
+    },
+    "domain" : "92",
+    "comment" : {
+      "en" : "Associates a Performance to a physical Sound that is being produced by it."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "352"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasStructure",
+    "inverse" : "292",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasStructure",
+      "en" : "has structure"
+    },
+    "domain" : "97",
+    "comment" : {
+      "en" : "Associates a Musical Work to its Structure."
+    },
+    "attributes" : [ "object" ],
+    "id" : "353"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isPartOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "en" : "is part of"
+    },
+    "domain" : "52",
+    "comment" : {
+      "en" : "Inverse of hasInstrumentPart. Associates the Instrument Part to the belonging Symbolic Representation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "208"
+  }, {
+    "range" : "112",
+    "domain" : "148",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "354"
+  }, {
+    "range" : "58",
+    "domain" : "228",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "355"
+  }, {
+    "range" : "58",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "356"
+  }, {
+    "range" : "58",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "357"
+  }, {
+    "range" : "58",
+    "domain" : "212",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "358"
+  }, {
+    "range" : "120",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "359"
+  }, {
+    "range" : "120",
+    "domain" : "121",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "360"
+  }, {
+    "range" : "97",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "361"
+  }, {
+    "range" : "22",
+    "domain" : "186",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "362"
+  }, {
+    "range" : "93",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "363"
+  }, {
+    "range" : "112",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "364"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMidiInstrument",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "366",
+    "label" : {
+      "IRI-based" : "hasMidiInstrument",
+      "en" : "has midi instrument"
+    },
+    "domain" : "52",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "365"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasSymbolicRepresentation",
+    "inverse" : "122",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasSymbolicRepresentation",
+      "en" : "has symbolic representation"
+    },
+    "domain" : "123",
+    "comment" : {
+      "en" : "Asscoiates the mo:Movement with the Symbolic Representation."
+    },
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "367"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/conducted",
+    "inverse" : "331",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "conducted",
+      "en" : "conducted"
+    },
+    "domain" : "114",
+    "comment" : {
+      "en" : "Relates agents to the performances they were conducting"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "368"
+  }, {
+    "range" : "17",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "371"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "372"
+  }, {
+    "range" : "11",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "373"
+  }, {
+    "range" : "93",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "374"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasSymbolicEvent",
+    "inverse" : "49",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasSymbolicEvent",
+      "en" : "has symbolic event"
+    },
+    "domain" : "50",
+    "comment" : {
+      "en" : "Associates an instrument Voice with the contained Symbolic Events."
+    },
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "375"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isChordVoicingOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "isChordVoicingOf",
+      "en" : "is chord voice of"
+    },
+    "domain" : "186",
+    "comment" : {
+      "en" : "Associates a Chord Voicing to the belonging Chord."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "329"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isFeatureOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "isFeatureOf",
+      "en" : "is feature of"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Associates the Musicological Feature to the Musical Work."
+    },
+    "attributes" : [ "object" ],
+    "id" : "235"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#arousesEmotionType",
+    "inverse" : "378",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "109",
+    "label" : {
+      "IRI-based" : "arousesEmotionType",
+      "en" : "arouses emotion"
+    },
+    "domain" : "369",
+    "comment" : {
+      "en" : "Associates the Musical Work with the Emotion Type that the piece arouses."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "377"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasAccidental",
+    "inverse" : "380",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasAccidental",
+      "en" : "has accidental"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Associates a Symbolic Event to its Accidental."
+    },
+    "attributes" : [ "functional", "inverse functional", "object" ],
+    "id" : "379"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isArousedBy",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "370",
+    "label" : {
+      "IRI-based" : "isArousedBy",
+      "en" : "is aroused by"
+    },
+    "domain" : "109",
+    "comment" : {
+      "en" : "Associates an Emotion Type to the Musical Work or the Segment that arouses such emotion."
+    },
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "378"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/records",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "records",
+      "en" : "records"
+    },
+    "domain" : "36",
+    "comment" : {
+      "en" : "This is the inverse of the shortcut property recordedAs, allowing to relate directly a performance to a signal."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "146",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "381"
+  }, {
+    "range" : "55",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "382"
+  }, {
+    "range" : "145",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "383"
+  }, {
+    "range" : "79",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "384"
+  }, {
+    "range" : "152",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "385"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasDuration",
+    "inverse" : "180",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasDuration",
+      "en" : "has duration"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Associates a Symbolic Event to the Symbolic Duration it has."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "386"
+  }, {
+    "range" : "42",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "387"
+  }, {
+    "range" : "48",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "388"
+  }, {
+    "range" : "31",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "389"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasRhythmicPatternConstituent",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "hasRhythmicPatternConstituent",
+      "en" : "has rhythmic pattern constituent"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Associates a Rhythmic Pattern to its constituents."
+    },
+    "attributes" : [ "object" ],
+    "id" : "238"
+  }, {
+    "range" : "151",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "390"
+  }, {
+    "range" : "56",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "391"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isRhythmicFigureOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isRhythmicFigureOf",
+      "en" : "is rhythmic figure of"
+    },
+    "domain" : "42",
+    "comment" : {
+      "en" : "Associates the Symbolic Duration to a Rhythmic Pattern."
+    },
+    "attributes" : [ "object" ],
+    "id" : "194"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isComposedByInterval",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isComposedByInterval",
+      "en" : "is composed by interval"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Associates an Interval Pattern to its constituent Melodic Interval."
+    },
+    "attributes" : [ "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/sampled_version_of",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "sampled_version_of",
+      "en" : "sampled version of"
+    },
+    "domain" : "39",
+    "attributes" : [ "external", "object" ],
+    "id" : "392"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#isAccidentalOf",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isAccidentalOf",
+      "en" : "is accidental of"
+    },
+    "domain" : "58",
+    "comment" : {
+      "en" : "Inverse of hasAccidental."
+    },
+    "attributes" : [ "functional", "inverse functional", "object" ],
+    "id" : "380"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#belongsToRussellsQuadrant",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "belongsToRussellsQuadrant",
+      "en" : "belongs to Russell's quadrant"
+    },
+    "domain" : "109",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "393"
+  }, {
+    "iri" : "https://github.com/andreamust/HaMSE_Ontology/schema#hasMelodicPatternCardinality",
+    "baseIri" : "https://github.com/andreamust/HaMSE_Ontology/schema",
+    "range" : "376",
+    "label" : {
+      "IRI-based" : "hasMelodicPatternCardinality",
+      "en" : "has melodic pattern cardinality"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "394"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/movement",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "movement",
+      "en" : "movement"
+    },
+    "domain" : "97",
+    "comment" : {
+      "en" : "Indicates that a musical work has movements."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "395"
+  } ]
+}

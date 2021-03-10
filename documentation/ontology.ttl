@@ -1,0 +1,1652 @@
+@prefix : <https://github.com/andreamust/HaMSE_Ontology/schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://github.com/andreamust/HaMSE_Ontology/schema> .
+
+<https://github.com/andreamust/HaMSE_Ontology/schema> rdf:type owl:Ontology ;
+                                                       <http://purl.org/dc/elements/1.1/creator> "Andrea Poltronieri" ;
+                                                       <http://purl.org/dc/elements/1.1/license> "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)." ;
+                                                       <http://purl.org/dc/terms/license> "Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)." ;
+                                                       rdfs:comment "HaMSE (Harmonic, Melodical, Structural and Emotional feauteres ontology)" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#duration
+xsd:duration rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/NET/c4dm/timeline.owl#domainTimeLine
+<http://purl.org/NET/c4dm/timeline.owl#domainTimeLine> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://purl.org/NET/c4dm/timeline.owl#TimeLineMap> ;
+                                                       rdfs:range <http://purl.org/NET/c4dm/timeline.owl#DiscreteTimeLine> ;
+                                                       rdfs:comment "Associates a timeline map to its domain timeline."@en ;
+                                                       rdfs:label "domain timeline"@en .
+
+
+###  http://purl.org/NET/c4dm/timeline.owl#rangeTimeLine
+<http://purl.org/NET/c4dm/timeline.owl#rangeTimeLine> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://purl.org/NET/c4dm/timeline.owl#TimeLineMap> ;
+                                                      rdfs:range <http://purl.org/NET/c4dm/timeline.owl#AbstractTimeLine> ;
+                                                      rdfs:comment "Associates a timeline map to its range timeline."@en ;
+                                                      rdfs:label "range timeline"@en .
+
+
+###  http://purl.org/NET/c4dm/timeline.owl#timeline
+<http://purl.org/NET/c4dm/timeline.owl#timeline> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://purl.org/NET/c4dm/timeline.owl#Interval> ;
+                                                 rdfs:range <http://purl.org/NET/c4dm/timeline.owl#TimeLine> ;
+                                                 rdfs:comment """Relates an interval or an instant to the timeline on which it is defined.
+
+The 29th of August, 2007 would be linked through this property to the universal timeline, whereas
+\"from 2s to 5s on this particular signal\" would be defined on the signal' timeline."""@en ;
+                                                 rdfs:label "timeline"@en .
+
+
+###  http://purl.org/ontology/mo/arranged_in
+<http://purl.org/ontology/mo/arranged_in> rdf:type owl:ObjectProperty ;
+                                          owl:inverseOf <http://purl.org/ontology/mo/arrangement_of> ;
+                                          rdfs:domain <http://purl.org/ontology/mo/MusicalWork> ;
+                                          rdfs:range <http://purl.org/ontology/mo/Arrangement> ;
+                                          rdfs:comment "Associates a work to an arrangement event where it was arranged"@en ;
+                                          rdfs:label "arranged in"@en .
+
+
+###  http://purl.org/ontology/mo/arrangement_of
+<http://purl.org/ontology/mo/arrangement_of> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://purl.org/ontology/mo/Arrangement> ;
+                                             rdfs:range <http://purl.org/ontology/mo/MusicalWork> ;
+                                             rdfs:comment "Associates an arrangement event to a work"@en ;
+                                             rdfs:label "arrangement of"@en .
+
+
+###  http://purl.org/ontology/mo/composed_in
+<http://purl.org/ontology/mo/composed_in> rdf:type owl:ObjectProperty ;
+                                          owl:inverseOf <http://purl.org/ontology/mo/produced_work> ;
+                                          rdfs:domain <http://purl.org/ontology/mo/MusicalWork> ;
+                                          rdfs:range <http://purl.org/ontology/mo/Composition> ;
+                                          rdfs:comment "Associates a MusicalWork to the Composition event pertaining to its creation. For example, I might use this property to associate the Magic Flute to its composition event, occuring during 1782 and having as a mo:composer Mozart."@en ;
+                                          rdfs:label "composed in"@en .
+
+
+###  http://purl.org/ontology/mo/composer
+<http://purl.org/ontology/mo/composer> rdf:type owl:ObjectProperty ;
+                                       owl:inverseOf :isComposerOf ;
+                                       rdfs:domain <http://purl.org/ontology/mo/Composition> ;
+                                       rdfs:range <http://purl.org/ontology/mo/MusicArtist> ;
+                                       rdfs:comment "Associates a composition event to the actual composer. For example, this property could link the event corresponding to the composition of the Magic Flute in 1782 to Mozart himself (who obviously has a FOAF profile:-) )."@en ;
+                                       rdfs:label "composer"@en .
+
+
+###  http://purl.org/ontology/mo/conducted
+<http://purl.org/ontology/mo/conducted> rdf:type owl:ObjectProperty ;
+                                        owl:inverseOf <http://purl.org/ontology/mo/conductor> ;
+                                        rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+                                        rdfs:range <http://purl.org/ontology/mo/Performance> ;
+                                        rdfs:comment "Relates agents to the performances they were conducting"@en ;
+                                        rdfs:label "conducted"@en .
+
+
+###  http://purl.org/ontology/mo/conductor
+<http://purl.org/ontology/mo/conductor> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <http://purl.org/ontology/mo/Performance> ;
+                                        rdfs:range <http://xmlns.com/foaf/0.1/Agent> ;
+                                        rdfs:comment "Relates a performance to the conductor involved"@en ;
+                                        rdfs:label "conductor"@en .
+
+
+###  http://purl.org/ontology/mo/genre
+<http://purl.org/ontology/mo/genre> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.org/ontology/mo/Arrangement>
+                                                                <http://purl.org/ontology/mo/Composition>
+                                                                <http://purl.org/ontology/mo/MusicalExpression>
+                                                                <http://purl.org/ontology/mo/MusicalManifestation>
+                                                                <http://purl.org/ontology/mo/MusicalWork>
+                                                                <http://purl.org/ontology/mo/Performance>
+                                                                <http://purl.org/ontology/mo/Recording>
+                                                              )
+                                                ] ;
+                                    rdfs:range <http://purl.org/ontology/mo/Genre> ;
+                                    rdfs:comment "Associates an event (like a performance or a recording) to a particular musical genre. Further version of this property may also include works and scores in the domain."@en ;
+                                    rdfs:label "genre"@en .
+
+
+###  http://purl.org/ontology/mo/instrument
+<http://purl.org/ontology/mo/instrument> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <http://purl.org/ontology/mo/Performance> ;
+                                         rdfs:range <http://purl.org/ontology/mo/Instrument> ;
+                                         rdfs:comment "Relates a performance to a musical instrument involved"@en ;
+                                         rdfs:label "instrument"@en .
+
+
+###  http://purl.org/ontology/mo/key
+<http://purl.org/ontology/mo/key> rdf:type owl:ObjectProperty ;
+                                  rdfs:domain [ rdf:type owl:Class ;
+                                                owl:unionOf ( <http://purl.org/ontology/mo/Movement>
+                                                              <http://purl.org/ontology/mo/MusicalWork>
+                                                              <http://purl.org/ontology/mo/Performance>
+                                                              <http://purl.org/ontology/mo/Signal>
+                                                            )
+                                              ] ;
+                                  rdfs:range <http://purl.org/ontology/mo/Key> ;
+                                  rdfs:comment "Indicated the key used by the musicians during a performance, or the key of a MusicalWork. Any of 24 major or minor diatonic scales that provide the tonal framework for a piece of music."@en ;
+                                  rdfs:label "key"@en .
+
+
+###  http://purl.org/ontology/mo/movement
+<http://purl.org/ontology/mo/movement> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <http://purl.org/ontology/mo/MusicalWork> ;
+                                       rdfs:range <http://purl.org/ontology/mo/Movement> ;
+                                       rdfs:comment "Indicates that a musical work has movements."@en ;
+                                       rdfs:label "movement"@en .
+
+
+###  http://purl.org/ontology/mo/performance_of
+<http://purl.org/ontology/mo/performance_of> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf <http://purl.org/ontology/mo/performed_in> ;
+                                             rdfs:domain <http://purl.org/ontology/mo/Performance> ;
+                                             rdfs:range [ rdf:type owl:Class ;
+                                                          owl:unionOf ( <http://purl.org/ontology/mo/MusicalWork>
+                                                                        <http://purl.org/ontology/mo/Score>
+                                                                      )
+                                                        ] ;
+                                             rdfs:comment "Associates a Performance to a musical work or an arrangement that is being used as a factor in it. For example, I might use this property to attach the Magic Flute musical work to a particular Performance."@en ;
+                                             rdfs:label "performance of"@en .
+
+
+###  http://purl.org/ontology/mo/performed
+<http://purl.org/ontology/mo/performed> rdf:type owl:ObjectProperty ;
+                                        owl:inverseOf <http://purl.org/ontology/mo/performer> ;
+                                        rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+                                        rdfs:range <http://purl.org/ontology/mo/Performance> ;
+                                        rdfs:comment "Relates agents to the performances they were performing in"@en ;
+                                        rdfs:label "performed"@en .
+
+
+###  http://purl.org/ontology/mo/performed_in
+<http://purl.org/ontology/mo/performed_in> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain [ rdf:type owl:Class ;
+                                                         owl:unionOf ( <http://purl.org/ontology/mo/MusicalWork>
+                                                                       <http://purl.org/ontology/mo/Score>
+                                                                     )
+                                                       ] ;
+                                           rdfs:range <http://purl.org/ontology/mo/Performance> ;
+                                           rdfs:comment "Associates a Performance to a musical work or an arrangement that is being used as a factor in it. For example, I might use this property to attach the Magic Flute musical work to a particular Performance."@en ;
+                                           rdfs:label "performance in"@en .
+
+
+###  http://purl.org/ontology/mo/performer
+<http://purl.org/ontology/mo/performer> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <http://purl.org/ontology/mo/Performance> ;
+                                        rdfs:range <http://xmlns.com/foaf/0.1/Agent> ;
+                                        rdfs:comment "Relates a performance to the performers involved"@en ;
+                                        rdfs:label "performer"@en .
+
+
+###  http://purl.org/ontology/mo/produced_score
+<http://purl.org/ontology/mo/produced_score> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain [ rdf:type owl:Class ;
+                                                           owl:unionOf ( <http://purl.org/ontology/mo/Arrangement>
+                                                                         <http://purl.org/ontology/mo/Composition>
+                                                                       )
+                                                         ] ;
+                                             rdfs:range <http://purl.org/ontology/mo/Score> ;
+                                             rdfs:comment "Associates an arrangement or a composition event to a score product (score here does not refer to a published score, but more an abstract arrangement of a particular work)."@en ;
+                                             rdfs:label "produced_score"@en .
+
+
+###  http://purl.org/ontology/mo/produced_signal
+<http://purl.org/ontology/mo/produced_signal> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://purl.org/ontology/mo/Recording> ;
+                                              rdfs:range <http://purl.org/ontology/mo/Signal> ;
+                                              rdfs:comment "Associates a Recording to the outputted signal."@en ;
+                                              rdfs:label "produced signal"@en .
+
+
+###  http://purl.org/ontology/mo/produced_sound
+<http://purl.org/ontology/mo/produced_sound> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://purl.org/ontology/mo/Performance> ;
+                                             rdfs:range <http://purl.org/ontology/mo/Sound> ;
+                                             rdfs:comment "Associates a Performance to a physical Sound that is being produced by it."@en ;
+                                             rdfs:label "produced sound"@en .
+
+
+###  http://purl.org/ontology/mo/produced_work
+<http://purl.org/ontology/mo/produced_work> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://purl.org/ontology/mo/Composition> ;
+                                            rdfs:range <http://purl.org/ontology/mo/MusicalWork> ;
+                                            rdfs:comment "Associates a composition event to the produced MusicalWork. For example, this property could link the event corresponding to the composition of the Magic Flute in 1782 to the Magic Flute musical work itself. This musical work can then be used in particular performances."@en ;
+                                            rdfs:label "produced work"@en .
+
+
+###  http://purl.org/ontology/mo/published_as
+<http://purl.org/ontology/mo/published_as> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://purl.org/ontology/mo/MusicalExpression> ;
+                                           rdfs:range <http://purl.org/ontology/mo/MusicalManifestation> ;
+                                           rdfs:comment "Links a musical expression (e.g. a signal or a score) to one of its manifestations (e.g. a track on a particular record or a published score)."@en ;
+                                           rdfs:label "published as"@en .
+
+
+###  http://purl.org/ontology/mo/recorded_as
+<http://purl.org/ontology/mo/recorded_as> rdf:type owl:ObjectProperty ;
+                                          owl:inverseOf <http://purl.org/ontology/mo/records> ;
+                                          rdfs:domain <http://purl.org/ontology/mo/Performance> ;
+                                          rdfs:range <http://purl.org/ontology/mo/Signal> ;
+                                          rdfs:comment "This is a shortcut property, allowing to bypass all the Sound/Recording steps. This property allows to directly link a Performance to the recorded Signal. This is recommended for \"normal\" users. However, advanced users wanting to express things such as the location of the microphone will have to create this shortcut as well as the whole workflow, in order to let the \"normal\" users access simply the, well, simple information:-) ."@en ;
+                                          rdfs:label "recorded as"@en .
+
+
+###  http://purl.org/ontology/mo/recording_of
+<http://purl.org/ontology/mo/recording_of> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://purl.org/ontology/mo/Recording> ;
+                                           rdfs:range <http://purl.org/ontology/mo/Sound> ;
+                                           rdfs:comment "Associates a Recording event to a physical Sound being recorded. For example, I might use this property to associate a given recording, done using my cell phone, to the sound produced by a particular performance of the magic flute."@en ;
+                                           rdfs:label "recording of"@en .
+
+
+###  http://purl.org/ontology/mo/records
+<http://purl.org/ontology/mo/records> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://purl.org/ontology/mo/Signal> ;
+                                      rdfs:range <http://purl.org/ontology/mo/Performance> ;
+                                      rdfs:comment "This is the inverse of the shortcut property recordedAs, allowing to relate directly a performance to a signal."@en ;
+                                      rdfs:label "records"@en .
+
+
+###  http://purl.org/ontology/mo/sampled_version_of
+<http://purl.org/ontology/mo/sampled_version_of> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://purl.org/ontology/mo/DigitalSignal> ;
+                                                 rdfs:range <http://purl.org/ontology/mo/AnalogSignal> ;
+                                                 rdfs:label "sampled version of"@en .
+
+
+###  http://purl.org/ontology/mo/time
+<http://purl.org/ontology/mo/time> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <http://purl.org/ontology/mo/DigitalSignal> ;
+                                   rdfs:range <http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval> ;
+                                   rdfs:comment "Associates a Signal to a time object - its actual domain,"@en ;
+                                   rdfs:label "time"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#arousesEmotionType
+:arousesEmotionType rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :isArousedBy ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :MusicologicalFeature ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( <http://purl.org/ontology/mo/MusicalWork>
+                                                :Segment
+                                              )
+                                ] ;
+                    rdfs:range :EmotionType ;
+                    rdfs:comment "Associates the Musical Work with the Emotion Type that the piece arouses."@en ;
+                    rdfs:label "arouses emotion"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#belongsToChord
+:belongsToChord rdf:type owl:ObjectProperty ;
+                owl:inverseOf :hasChordNote ;
+                rdfs:domain :SymbolicEvent ;
+                rdfs:range :Chord ;
+                rdfs:comment "Associates the Symbolic Event to the Chord. It is the inverse property of hasChordNote."@en ;
+                rdfs:label "belongs to chord"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#belongsToIntervalPattern
+:belongsToIntervalPattern rdf:type owl:ObjectProperty ;
+                          owl:inverseOf :isComposedByInterval ;
+                          rdfs:domain :MelodicInterval ;
+                          rdfs:range :IntervalPattern ;
+                          rdfs:comment "Associates a Melodic Interval to a Melodic Pattern the interval belongs to."@en ;
+                          rdfs:label "belongs to interval pattern"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#belongsToMelodicPattern
+:belongsToMelodicPattern rdf:type owl:ObjectProperty ;
+                         rdfs:domain :SymbolicEvent ;
+                         rdfs:range :MelodicPattern ;
+                         rdfs:comment "Associates a Symbolic Event to a Melodic Pattern."@en ;
+                         rdfs:label "belongs to melodic pattern"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#constitutesIntervalPattern
+:constitutesIntervalPattern rdf:type owl:ObjectProperty ;
+                            owl:inverseOf :hasIntervalPatternConstituent ;
+                            rdfs:domain :IntervalPatternConstituent ;
+                            rdfs:range :IntervalPattern ;
+                            rdfs:comment "Associates an Interval Pattern Constituent to the belonging Interval Pattern. Inverse of hasIntervalPatternConstituent property."@en ;
+                            rdfs:label "constitutes interval pattern"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#constitutesMelodicPattern
+:constitutesMelodicPattern rdf:type owl:ObjectProperty ;
+                           owl:inverseOf :hasMelodicPatternConstituent ;
+                           rdfs:domain :MelodicPatternConstituent ;
+                           rdfs:range :MelodicPattern ;
+                           rdfs:comment "Associates a Melodic Pattern Constituent to the belonging Melodic Pattern."@en ;
+                           rdfs:label "constitutes melodic pattern"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#constitutesProgression
+:constitutesProgression rdf:type owl:ObjectProperty ;
+                        owl:inverseOf :isComposedByChord ;
+                        rdfs:domain :Chord ;
+                        rdfs:range :ChordProgression ;
+                        rdfs:comment "Associates a Chord to the Chord Progression it belongs to."@en ;
+                        rdfs:label "constitutes progression"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#constitutesRhythmicPattern
+:constitutesRhythmicPattern rdf:type owl:ObjectProperty ;
+                            owl:inverseOf :hasRhythmicPatternConstituent ;
+                            rdfs:domain :RhythmicPatternConstituent ;
+                            rdfs:range :RhythmicPattern ;
+                            rdfs:comment "Relates a Rhythmic Pattern Constituent to the belonging Rhythmic Pattern."@en ;
+                            rdfs:label "constitutes rhythmic pattern"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#createsInterval
+:createsInterval rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :intervalCreatedBy ;
+                 rdfs:domain :SymbolicEvent ;
+                 rdfs:range :MelodicInterval ;
+                 rdfs:comment "Associates two consequent Symbolic Events with the Melodic Interval they create."@en ;
+                 rdfs:label "creates interval"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#definesPositionOf
+:definesPositionOf rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :isDefinedAtTimeInterval ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain <http://purl.org/NET/c4dm/timeline.owl#Interval> ;
+                   rdfs:range :Position ;
+                   rdfs:comment "Associates the Interval defined on a TimeLine with the Position of the Symbolic Event played at this specific interval."@en ;
+                   rdfs:label "defines position of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#definesSegment
+:definesSegment rdf:type owl:ObjectProperty ;
+                owl:inverseOf :segmentDefinedBy ;
+                rdfs:domain <http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval> ;
+                rdfs:range :Segment ;
+                rdfs:comment "Links an interval defined on a TimeLine to the segment that defines the interval."@en ;
+                rdfs:label "defines segment"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#definesStructure
+:definesStructure rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :isDefinedBySegment ;
+                  rdfs:domain :Structure ;
+                  rdfs:range :Segment ;
+                  rdfs:comment "Associates a Structure to its constituent Segments."@en ;
+                  rdfs:label "defines structure"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasAccidental
+:hasAccidental rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isAccidentalOf ;
+               rdf:type owl:FunctionalProperty ,
+                        owl:InverseFunctionalProperty ;
+               rdfs:domain :SymbolicEvent ;
+               rdfs:range :Accidental ;
+               rdfs:comment "Associates a Symbolic Event to its Accidental."@en ;
+               rdfs:label "has accidental"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasChordNote
+:hasChordNote rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Chord ;
+              rdfs:range :SymbolicEvent ;
+              rdfs:comment "Associates a Chord to the Symbolic Events it is composed of."@en ;
+              rdfs:label "has chord note"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasChordVoice
+:hasChordVoice rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isChordVoicingOf ;
+               rdf:type owl:InverseFunctionalProperty ;
+               rdfs:domain :Chord ;
+               rdfs:range :ChordVoicing ;
+               rdfs:comment "Associates a Chord to its Voicing."@en ;
+               rdfs:label "has chord voice"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasDissonance
+:hasDissonance rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isDissonanceOf ;
+               rdf:type owl:FunctionalProperty ,
+                        owl:InverseFunctionalProperty ;
+               rdfs:domain :MelodicInterval ;
+               rdfs:range :Dissonance ;
+               rdfs:comment "Associates a Melodic Interval to a Dissonance."@en ;
+               rdfs:label "has dissonance"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasDuration
+:hasDuration rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isDurationOf ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :SymbolicEvent ;
+             rdfs:range :SymbolicDuration ;
+             rdfs:comment "Associates a Symbolic Event to the Symbolic Duration it has."@en ;
+             rdfs:label "has duration"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasDynamic
+:hasDynamic rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isDynamicOf ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :SymbolicEvent ;
+            rdfs:range :Dynamic ;
+            rdfs:comment "Associates a Symbolic Event to its Dynamic."@en ;
+            rdfs:label "has dynamic"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasFeature
+:hasFeature rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isFeatureOf ;
+            rdfs:domain <http://purl.org/ontology/mo/MusicalWork> ;
+            rdfs:range :MusicologicalFeature ;
+            rdfs:comment "Associates the mo:Musical Work with the main class of the whole HaMSE Ontology, namely MusicologicalFeatures."@en ;
+            rdfs:label "has feature"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasInstrumentPart
+:hasInstrumentPart rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :isPartOf ;
+                   rdfs:domain :SymbolicRepresentation ;
+                   rdfs:range :InstrumentPart ;
+                   rdfs:comment "Associates a Symbolic Representationto the Instrment Parts it composed of."@en ;
+                   rdfs:label "has part"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalPatternConstituent
+:hasIntervalPatternConstituent rdf:type owl:ObjectProperty ;
+                               rdfs:domain :IntervalPattern ;
+                               rdfs:range :IntervalPatternConstituent ;
+                               rdfs:comment "Associates a Interval Pattern to its constituents."@en ;
+                               rdfs:label "has interval pattern constituent"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasMelodicPatternConstituent
+:hasMelodicPatternConstituent rdf:type owl:ObjectProperty ;
+                              rdfs:domain :MelodicPattern ;
+                              rdfs:range :MelodicPatternConstituent ;
+                              rdfs:comment "Associates a Melodic Pattern to its constituents."@en ;
+                              rdfs:label "has melodic pattern constituent"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasPosition
+:hasPosition rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isPositionOf ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :SymbolicEvent ;
+             rdfs:range :Position ;
+             rdfs:comment "Associates the Symbolic Event with its Position."@en ;
+             rdfs:label "has position"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasRhythmicFigure
+:hasRhythmicFigure rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :isRhythmicFigureOf ;
+                   rdfs:domain :RhythmicPattern ;
+                   rdfs:range :SymbolicDuration ;
+                   rdfs:comment "Associates a Rhythmic Pattern with the Duration that constitutes the pattern."@en ;
+                   rdfs:label "has rhythmic figure"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasRhythmicPatternConstituent
+:hasRhythmicPatternConstituent rdf:type owl:ObjectProperty ;
+                               rdfs:domain :RhythmicPattern ;
+                               rdfs:range :RhythmicPatternConstituent ;
+                               rdfs:comment "Associates a Rhythmic Pattern to its constituents."@en ;
+                               rdfs:label "has rhythmic pattern constituent"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasStructure
+:hasStructure rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isStructureOf ;
+              rdfs:domain <http://purl.org/ontology/mo/MusicalWork> ;
+              rdfs:range :Structure ;
+              rdfs:comment "Associates a Musical Work to its Structure."@en ;
+              rdfs:label "has structure"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasSymbolicEvent
+:hasSymbolicEvent rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :isSymbolicEventOf ;
+                  rdf:type owl:InverseFunctionalProperty ;
+                  rdfs:domain :Voice ;
+                  rdfs:range :SymbolicEvent ;
+                  rdfs:comment "Associates an instrument Voice with the contained Symbolic Events."@en ;
+                  rdfs:label "has symbolic event"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasSymbolicRepresentation
+:hasSymbolicRepresentation rdf:type owl:ObjectProperty ;
+                           owl:inverseOf :isSymbolicRepresentationOf ;
+                           rdf:type owl:InverseFunctionalProperty ;
+                           rdfs:domain <http://purl.org/ontology/mo/Movement> ;
+                           rdfs:range :SymbolicRepresentation ;
+                           rdfs:comment "Asscoiates the mo:Movement with the Symbolic Representation."@en ;
+                           rdfs:label "has symbolic representation"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasVoice
+:hasVoice rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isVoiceOf ;
+          rdf:type owl:InverseFunctionalProperty ;
+          rdfs:domain :InstrumentPart ;
+          rdfs:range :Voice ;
+          rdfs:comment "Associates the Instrument Part with the different Voices the part may contain."@en ;
+          rdfs:label "has voice"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#intervalCreatedBy
+:intervalCreatedBy rdf:type owl:ObjectProperty ;
+                   rdfs:domain :MelodicInterval ;
+                   rdfs:range :SymbolicEvent ;
+                   rdfs:comment "Associates a Melodic Interval to the Symbolic Events that generates it."@en ;
+                   rdfs:label "interval created by"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isAccidentalOf
+:isAccidentalOf rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ,
+                         owl:InverseFunctionalProperty ;
+                rdfs:domain :Accidental ;
+                rdfs:range :SymbolicEvent ;
+                rdfs:comment "Inverse of hasAccidental."@en ;
+                rdfs:label "is accidental of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isArousedBy
+:isArousedBy rdf:type owl:ObjectProperty ,
+                      owl:InverseFunctionalProperty ;
+             rdfs:domain :EmotionType ;
+             rdfs:range :MusicologicalFeature ,
+                        [ rdf:type owl:Class ;
+                          owl:unionOf ( <http://purl.org/ontology/mo/MusicalWork>
+                                        :Segment
+                                      )
+                        ] ;
+             rdfs:comment "Associates an Emotion Type to the Musical Work or the Segment that arouses such emotion."@en ;
+             rdfs:label "is aroused by"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isChordVoicingOf
+:isChordVoicingOf rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :ChordVoicing ;
+                  rdfs:range :Chord ;
+                  rdfs:comment "Associates a Chord Voicing to the belonging Chord."@en ;
+                  rdfs:label "is chord voice of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isComposedByChord
+:isComposedByChord rdf:type owl:ObjectProperty ;
+                   rdfs:domain :ChordProgression ;
+                   rdfs:range :Chord ;
+                   rdfs:comment "Associates a Chord Progrression to its constituent Chords."@en ;
+                   rdfs:label "is composed by chord"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isComposedByInterval
+:isComposedByInterval rdf:type owl:ObjectProperty ;
+                      rdfs:domain :IntervalPattern ;
+                      rdfs:range :MelodicInterval ;
+                      rdfs:comment "Associates an Interval Pattern to its constituent Melodic Interval."@en ;
+                      rdfs:label "is composed by interval"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isComposerOf
+:isComposerOf rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://purl.org/ontology/mo/MusicArtist> ;
+              rdfs:range <http://purl.org/ontology/mo/Composition> ;
+              rdfs:comment "Inverse property of mo:composer."@en ;
+              rdfs:label "is composer of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isDefinedAtTimeInterval
+:isDefinedAtTimeInterval rdf:type owl:ObjectProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :Position ;
+                         rdfs:range <http://purl.org/NET/c4dm/timeline.owl#Interval> ;
+                         rdfs:comment "Associates the Position of a Symbolic Event to the Interval defined on a TimeLine."@en ;
+                         rdfs:label "is defined at time interval"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isDefinedBySegment
+:isDefinedBySegment rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Segment ;
+                    rdfs:range :Structure ;
+                    rdfs:comment "Associates a Segment to the the Structure that is defined by such segment."@en ;
+                    rdfs:label "has segment"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isDissonanceOf
+:isDissonanceOf rdf:type owl:ObjectProperty ;
+                rdfs:domain :Dissonance ;
+                rdfs:range :MelodicInterval ;
+                rdfs:comment "Associates a Dissonance to the Melodic Interval that creates such dissonance."@en ;
+                rdfs:label "is dissonance of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isDurationOf
+:isDurationOf rdf:type owl:ObjectProperty ;
+              rdfs:domain :SymbolicDuration ;
+              rdfs:range :SymbolicEvent ;
+              rdfs:comment "Associates the Symbolic Duration to the belonging Symbolic Event."@en ;
+              rdfs:label "is duration of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isDynamicOf
+:isDynamicOf rdf:type owl:ObjectProperty ;
+             rdfs:domain :Dynamic ;
+             rdfs:range :SymbolicEvent ;
+             rdfs:comment "Associates the Dynamic to the belonging Symbolic Event."@en ;
+             rdfs:label "is dynamic of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isFeatureOf
+:isFeatureOf rdf:type owl:ObjectProperty ;
+             rdfs:domain :MusicologicalFeature ;
+             rdfs:range <http://purl.org/ontology/mo/MusicalWork> ;
+             rdfs:comment "Associates the Musicological Feature to the Musical Work."@en ;
+             rdfs:label "is feature of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isPartOf
+:isPartOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :InstrumentPart ;
+          rdfs:range :SymbolicRepresentation ;
+          rdfs:comment "Inverse of hasInstrumentPart. Associates the Instrument Part to the belonging Symbolic Representation."@en ;
+          rdfs:label "is part of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isPositionOf
+:isPositionOf rdf:type owl:ObjectProperty ,
+                       owl:InverseFunctionalProperty ;
+              rdfs:domain :Position ;
+              rdfs:range :SymbolicEvent ;
+              rdfs:comment "Associates the Position to the belonging Symbolic Event."@en ;
+              rdfs:label "is position of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isRhythmicFigureOf
+:isRhythmicFigureOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SymbolicDuration ;
+                    rdfs:range :RhythmicPattern ;
+                    rdfs:comment "Associates the Symbolic Duration to a Rhythmic Pattern."@en ;
+                    rdfs:label "is rhythmic figure of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isStructureOf
+:isStructureOf rdf:type owl:ObjectProperty ;
+               rdfs:domain :Structure ;
+               rdfs:range <http://purl.org/ontology/mo/MusicalWork> ;
+               rdfs:comment "Associates the Structure to the Musical Work."@en ;
+               rdfs:label "is structure of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isSymbolicEventOf
+:isSymbolicEventOf rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :SymbolicEvent ;
+                   rdfs:range :Voice ;
+                   rdfs:comment "Associates a Symbolic Event to the belonging Voice."@en ;
+                   rdfs:label "is symbolic event of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isSymbolicRepresentationOf
+:isSymbolicRepresentationOf rdf:type owl:ObjectProperty ,
+                                     owl:FunctionalProperty ;
+                            rdfs:domain :SymbolicRepresentation ;
+                            rdfs:range <http://purl.org/ontology/mo/Movement> ;
+                            rdfs:comment "Associates the Symbolic Representation to the belonging Movement."@en ;
+                            rdfs:label "is symbolic representation of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#isVoiceOf
+:isVoiceOf rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Voice ;
+           rdfs:range :InstrumentPart ;
+           rdfs:comment "Associates o Voice to the belonging Instrument Part."@en ;
+           rdfs:label "is voice of"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#segmentDefinedBy
+:segmentDefinedBy rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Segment ;
+                  rdfs:range <http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval> ;
+                  rdfs:comment "Associates the Segment of a piece to the Discrete Interval defined on a Discrete TimeLine."@en ;
+                  rdfs:label "segment defined by"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/NET/c4dm/timeline.owl#beginsAtDuration
+<http://purl.org/NET/c4dm/timeline.owl#beginsAtDuration> rdf:type owl:DatatypeProperty ,
+                                                                  owl:FunctionalProperty ;
+                                                         rdfs:domain [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.org/NET/c4dm/timeline.owl#AbstractInterval>
+                                                                                     <http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval>
+                                                                                   )
+                                                                     ] ;
+                                                         rdfs:range xsd:duration ;
+                                                         rdfs:label "begins at duration"@en .
+
+
+###  http://purl.org/NET/c4dm/timeline.owl#endsAtDuration
+<http://purl.org/NET/c4dm/timeline.owl#endsAtDuration> rdf:type owl:DatatypeProperty ,
+                                                                owl:FunctionalProperty ;
+                                                       rdfs:domain [ rdf:type owl:Class ;
+                                                                     owl:unionOf ( <http://purl.org/NET/c4dm/timeline.owl#AbstractInterval>
+                                                                                   <http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval>
+                                                                                 )
+                                                                   ] ;
+                                                       rdfs:range xsd:duration ;
+                                                       rdfs:label "ends at duration"@en .
+
+
+###  http://purl.org/ontology/mo/movement_number
+<http://purl.org/ontology/mo/movement_number> rdf:type owl:DatatypeProperty ,
+                                                       owl:FunctionalProperty ;
+                                              rdfs:domain <http://purl.org/ontology/mo/Movement> ;
+                                              rdfs:range xsd:int ;
+                                              rdfs:comment "Indicates the position of a movement in a musical work."@en ;
+                                              rdfs:label "movement number"@en .
+
+
+###  http://purl.org/ontology/mo/opus
+<http://purl.org/ontology/mo/opus> rdf:type owl:DatatypeProperty ,
+                                            owl:FunctionalProperty ;
+                                   rdfs:domain <http://purl.org/ontology/mo/MusicalWork> ;
+                                   rdfs:range xsd:string ;
+                                   rdfs:comment "Used to define a creative work, especially a musical composition numbered to designate the order of a composer's works."@en ;
+                                   rdfs:label "opus"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#belongsToRussellsQuadrant
+:belongsToRussellsQuadrant rdf:type owl:DatatypeProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain :EmotionType ;
+                           rdfs:range xsd:int ;
+                           rdfs:label "belongs to Russell's quadrant"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasChordLabel
+:hasChordLabel rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Chord ;
+               rdfs:range xsd:string ;
+               rdfs:label "has chord label"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasClef
+:hasClef rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain :SymbolicEvent ;
+         rdfs:range xsd:string ;
+         rdfs:label "has clef"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasDissonanceCount
+:hasDissonanceCount rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Dissonance ;
+                    rdfs:range xsd:int ;
+                    rdfs:label "has dissonance count"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalCount
+:hasIntervalCount rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :MelodicInterval ;
+                  rdfs:range xsd:int ;
+                  rdfs:label "has interval count"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalPatternCardinality
+:hasIntervalPatternCardinality rdf:type owl:DatatypeProperty ,
+                                        owl:FunctionalProperty ;
+                               rdfs:domain :IntervalPatternConstituent ;
+                               rdfs:range xsd:int ;
+                               rdfs:label "has interval pattern cardinality"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasIntervalType
+:hasIntervalType rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :MelodicInterval ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has interval type"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasLiteralDynamic
+:hasLiteralDynamic rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Dynamic ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "has literal dynamic"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasMeasure
+:hasMeasure rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Position ;
+            rdfs:range xsd:int ;
+            rdfs:label "has measure"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasMeasureOffset
+:hasMeasureOffset rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Position ;
+                  rdfs:range xsd:decimal ;
+                  rdfs:label "has measure offset"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasMelodicPatternCardinality
+:hasMelodicPatternCardinality rdf:type owl:DatatypeProperty ,
+                                       owl:FunctionalProperty ;
+                              rdfs:domain :MelodicPatternConstituent ;
+                              rdfs:range xsd:int ;
+                              rdfs:label "has melodic pattern cardinality"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasMidiInstrument
+:hasMidiInstrument rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :InstrumentPart ;
+                   rdfs:range xsd:int ;
+                   rdfs:label "has midi instrument"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasMidiPitch
+:hasMidiPitch rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :SymbolicEvent ;
+              rdfs:range xsd:int ;
+              rdfs:label "has midi pitch"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasMidiVelocity
+:hasMidiVelocity rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Dynamic ;
+                 rdfs:range xsd:int ;
+                 rdfs:label "has midi velocity"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasOctave
+:hasOctave rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :SymbolicEvent ;
+           rdfs:range xsd:int ;
+           rdfs:label "has octave"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasProgressionCardinality
+:hasProgressionCardinality rdf:type owl:DatatypeProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain :Chord ;
+                           rdfs:range xsd:int ;
+                           rdfs:label "has progression cardinality"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasRhythmicPatternCardinality
+:hasRhythmicPatternCardinality rdf:type owl:DatatypeProperty ,
+                                        owl:FunctionalProperty ;
+                               rdfs:domain :RhythmicPatternConstituent ;
+                               rdfs:range xsd:int ;
+                               rdfs:label "has rhythmic pattern cardinality"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasStaff
+:hasStaff rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :InstrumentPart ;
+          rdfs:range xsd:int ;
+          rdfs:label "has staff"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#hasVoiceNumber
+:hasVoiceNumber rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :ChordVoicing ;
+                rdfs:range xsd:int ;
+                rdfs:label "has voice number"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/NET/c4dm/timeline.owl#AbstractInterval
+<http://purl.org/NET/c4dm/timeline.owl#AbstractInterval> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/NET/c4dm/timeline.owl#Interval> ;
+                                                         rdfs:comment "An interval defined on an abstract time-line."@en ;
+                                                         rdfs:label "Abstract Interval"@en .
+
+
+###  http://purl.org/NET/c4dm/timeline.owl#AbstractTimeLine
+<http://purl.org/NET/c4dm/timeline.owl#AbstractTimeLine> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/NET/c4dm/timeline.owl#TimeLine> ;
+                                                         rdfs:comment """Abstract time lines may be used as a backbone for Score, Works, ...
+This allows for TimeLine maps to relate works to a given
+performance (this part was played at this time)."""@en ;
+                                                         rdfs:label "Abstract Time Line"@en .
+
+
+###  http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval
+<http://purl.org/NET/c4dm/timeline.owl#DiscreteInterval> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/NET/c4dm/timeline.owl#Interval> ;
+                                                         rdfs:comment "An interval defined on a discrete timeline, like the one backing a digital signal."@en ;
+                                                         rdfs:label "Discrete Interval"@en .
+
+
+###  http://purl.org/NET/c4dm/timeline.owl#DiscreteTimeLine
+<http://purl.org/NET/c4dm/timeline.owl#DiscreteTimeLine> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/NET/c4dm/timeline.owl#TimeLine> ;
+                                                         rdfs:comment "A discrete time line (like the time line backing a digital signal)"@en ;
+                                                         rdfs:label "Discrete TimeLine"@en .
+
+
+###  http://purl.org/NET/c4dm/timeline.owl#Interval
+<http://purl.org/NET/c4dm/timeline.owl#Interval> rdf:type owl:Class ;
+                                                 rdfs:comment "An interval (same as in OWL-Time). Allen's relationships are defined in OWL-Time."@en ;
+                                                 rdfs:label "Interval"@en .
+
+
+###  http://purl.org/NET/c4dm/timeline.owl#TimeLine
+<http://purl.org/NET/c4dm/timeline.owl#TimeLine> rdf:type owl:Class ;
+                                                 rdfs:comment """Represents a linear and coherent piece of time -- can be either abstract (such as the one behind a score) or concrete (such as the universal time line).
+Two timelines can be mapped using timeline maps."""@en ;
+                                                 rdfs:label "TimeLine"@en .
+
+
+###  http://purl.org/NET/c4dm/timeline.owl#TimeLineMap
+<http://purl.org/NET/c4dm/timeline.owl#TimeLineMap> rdf:type owl:Class ;
+                                                    rdfs:comment "Allows to map two time lines together."@en ;
+                                                    rdfs:label "Time LineMap"@en .
+
+
+###  http://purl.org/ontology/mo/AnalogSignal
+<http://purl.org/ontology/mo/AnalogSignal> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.org/ontology/mo/Signal> ;
+                                           rdfs:label "Analog Signal"@en .
+
+
+###  http://purl.org/ontology/mo/Arrangement
+<http://purl.org/ontology/mo/Arrangement> rdf:type owl:Class ;
+                                          rdfs:subClassOf :MusicologicalFeature ;
+                                          rdfs:comment "An arrangement event. Takes as agent the arranger, and produces a score (informational object, not the actually published score)."@en ;
+                                          rdfs:label "Arrangement"@en .
+
+
+###  http://purl.org/ontology/mo/Composition
+<http://purl.org/ontology/mo/Composition> rdf:type owl:Class ;
+                                          rdfs:subClassOf :MusicologicalFeature ;
+                                          rdfs:comment "A composition event. Takes as agent the composer himself. It produces a MusicalWork, or a MusicalExpression (when the initial \"product\" is a score, for example), or both."@en ;
+                                          rdfs:label "Composition"@en .
+
+
+###  http://purl.org/ontology/mo/DigitalSignal
+<http://purl.org/ontology/mo/DigitalSignal> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/ontology/mo/Signal> ;
+                                            rdfs:label "Digital Signal"@en .
+
+
+###  http://purl.org/ontology/mo/Genre
+<http://purl.org/ontology/mo/Genre> rdf:type owl:Class ;
+                                    rdfs:subClassOf :MusicologicalFeature ;
+                                    rdfs:comment """An expressive style of music.
+Any taxonomy can be plug-in here. You can either define a genre by yourself, like this:
+:mygenre a mo:Genre; dc:title \"electro rock\".
+Or you can refer to a DBPedia genre (such as http://dbpedia.org/resource/Baroque_music), allowing semantic web clients to access easily really detailed structured information about the genre you are refering to."""@en ;
+                                    rdfs:label "Genre"@en .
+
+
+###  http://purl.org/ontology/mo/Instrument
+<http://purl.org/ontology/mo/Instrument> rdf:type owl:Class ;
+                                         rdfs:subClassOf :MusicologicalFeature ;
+                                         rdfs:comment "Any of various devices or contrivances that can be used to produce musical tones or sound. Any taxonomy can be used to subsume this concept. The default one is one extracted by Ivan Herman from the Musicbrainz instrument taxonomy, conforming to SKOS. This concept holds a seeAlso link towards this taxonomy."@en ;
+                                         rdfs:label "Instrument"@en .
+
+
+###  http://purl.org/ontology/mo/Key
+<http://purl.org/ontology/mo/Key> rdf:type owl:Class ;
+                                  rdfs:subClassOf :MusicologicalFeature ;
+                                  rdfs:comment "Indicated the key used by the musicians during a performance, or the key of a MusicalWork. Any of 24 major or minor diatonic scales that provide the tonal framework for a piece of music."@en ;
+                                  rdfs:label "Key"@en .
+
+
+###  http://purl.org/ontology/mo/Movement
+<http://purl.org/ontology/mo/Movement> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/ontology/mo/MusicalWork> ;
+                                       rdfs:comment "A movement is a self-contained part of a musical work. While individual or selected movements from a composition are sometimes performed separately, a performance of the complete work requires all the movements to be performed in succession. Often a composer attempts to interrelate the movements thematically, or sometimes in more subtle ways, in order that the individual movements exert a cumulative effect. In some forms, composers sometimes link the movements, or ask for them to be played without a pause between them."@en ;
+                                       rdfs:label "Movement"@en .
+
+
+###  http://purl.org/ontology/mo/MusicArtist
+<http://purl.org/ontology/mo/MusicArtist> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                                          rdfs:comment "A person or a group of people (or a computer :-) ), whose musical creative work shows sensitivity and imagination"@en ;
+                                          rdfs:label "Music Artist"@en .
+
+
+###  http://purl.org/ontology/mo/MusicalExpression
+<http://purl.org/ontology/mo/MusicalExpression> rdf:type owl:Class ;
+                                                rdfs:subClassOf :MusicologicalFeature ;
+                                                rdfs:comment "The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, etc., or any combination of such forms. For example: Work #1 Franz Schubert's Trout quintet * Expression #1 the composer's score * Expression #2 sound issued from the performance by the Amadeus Quartet and Hephzibah Menuhin on piano * Expression #3 sound issued from the performance by the Cleveland Quartet and Yo-Yo Ma on the cello * . . . . The Music Ontology defines the following sub-concepts of a MusicalExpression, which should be used instead of MusicalExpression itself: Score (the result of an arrangement), Sound (produced during a performance), Signal. However, it is possible to stick to FRBR and bypass the worflow mechanism this ontology defines by using the core FRBR properties on such objects. But it is often better to use events to interconnect such expressions (allowing to go deeply into the production process - `this performer was playing this particular instrument at that particular time')."@en ;
+                                                rdfs:label "Musical Expression"@en .
+
+
+###  http://purl.org/ontology/mo/MusicalManifestation
+<http://purl.org/ontology/mo/MusicalManifestation> rdf:type owl:Class ;
+                                                   rdfs:subClassOf :MusicologicalFeature ;
+                                                   rdfs:comment "This entity is related to the edition/production/publication of a musical expression (musical manifestation are closely related with the music industry (their terms, concepts, definitions, methods (production, publication, etc.), etc.) From the FRBR final report: The entity defined as manifestation encompasses a wide range of materials, including manuscripts, books, periodicals, maps, posters, sound recordings, films, video recordings, CD-ROMs, multimedia kits, etc. As an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form. Work #1 J. S. Bach's Six suites for unaccompanied cello * Expression #1 sound issued during the performance by Janos Starker recorded in 1963 and 1965 o Manifestation #1 recordings released on 33 1/3 rpm sound discs in 1965 by Mercury o Manifestation #2 recordings re-released on compact disc in 1991 by Mercury * Expression #2 sound issued during the performances by Yo-Yo Ma recorded in 1983 o Manifestation #1 recordings released on 33 1/3 rpm sound discs in 1983 by CBS Records o Manifestation #2 recordings re-released on compact disc in 1992 by CBS Records Changes that occur deliberately or even inadvertently in the production process that affect the copies result, strictly speaking, in a new manifestation. A manifestation resulting from such a change may be identified as a particular \"state\" or \"issue\" of the publication. Changes that occur to an individual copy after the production process is complete (e.g., the loss of a page, rebinding, etc.) are not considered to result in a new manifestation. That copy is simply considered to be an exemplar (or item) of the manifestation that deviates from the copy as produced. With the entity defined as manifestation we can describe the physical characteristics of a set of items and the characteristics associated with the production and distribution of that set of items that may be important factors in enabling users to choose a manifestation appropriate to their physical needs and constraints, and to identify and acquire a copy of that manifestation. Defining manifestation as an entity also enables us to draw relationships between specific manifestations of a work. We can use the relationships between manifestations to identify, for example, the specific publication that was used to create a microreproduction."@en ;
+                                                   rdfs:label "Musical Manifestation"@en .
+
+
+###  http://purl.org/ontology/mo/MusicalWork
+<http://purl.org/ontology/mo/MusicalWork> rdf:type owl:Class ;
+                                          rdfs:subClassOf :MusicologicalFeature ;
+                                          rdfs:comment "Distinct intellectual or artistic musical creation. From the FRBR final report: A work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work. For example: work #1 J. S. Bach's The art of the fugue"@en ;
+                                          rdfs:label "Musical Work"@en .
+
+
+###  http://purl.org/ontology/mo/Performance
+<http://purl.org/ontology/mo/Performance> rdf:type owl:Class ;
+                                          rdfs:subClassOf :MusicologicalFeature ;
+                                          rdfs:comment "A performance event. It might include as agents performers, engineers, conductors, or even listeners. It might include as factors a score, a MusicalWork, musical instruments. It might produce a sound"@en ;
+                                          rdfs:isDefinedBy "http://purl.org/ontology/mo/"@en ;
+                                          rdfs:label "Perormance"@en .
+
+
+###  http://purl.org/ontology/mo/PublishedScore
+<http://purl.org/ontology/mo/PublishedScore> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/ontology/mo/MusicalManifestation> ;
+                                             rdfs:comment "A published score (subclass of MusicalManifestation)"@en ;
+                                             rdfs:label "Published Score"@en .
+
+
+###  http://purl.org/ontology/mo/Record
+<http://purl.org/ontology/mo/Record> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/ontology/mo/MusicalManifestation> ;
+                                     rdfs:comment "A published record (manifestation which first aim is to render the product of a recording)"@en ;
+                                     rdfs:label "Record"@en .
+
+
+###  http://purl.org/ontology/mo/Recording
+<http://purl.org/ontology/mo/Recording> rdf:type owl:Class ;
+                                        rdfs:subClassOf :MusicologicalFeature ;
+                                        rdfs:comment "A recording event. Takes a sound as a factor to produce a signal (analog or digital). The location of such events (if any) is the actual location of the corresponding microphone or the \"recording device\"."@en ;
+                                        rdfs:label "Recording"@en .
+
+
+###  http://purl.org/ontology/mo/Score
+<http://purl.org/ontology/mo/Score> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://purl.org/ontology/mo/MusicalExpression> ;
+                                    rdfs:comment "Here, we are dealing with the informational object (the MusicalExpression), not the actually \"published\" score. This may be, for example, the product of an arrangement process."@en ;
+                                    rdfs:label "Score"@en .
+
+
+###  http://purl.org/ontology/mo/Signal
+<http://purl.org/ontology/mo/Signal> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/ontology/mo/MusicalExpression> ;
+                                     rdfs:comment "A subclass of MusicalExpression, representing a signal, for example a master signal produced by a performance and a recording."@en ;
+                                     rdfs:label "Signal"@en .
+
+
+###  http://purl.org/ontology/mo/Sound
+<http://purl.org/ontology/mo/Sound> rdf:type owl:Class ;
+                                    rdfs:subClassOf :MusicologicalFeature ;
+                                    rdfs:comment "A subclass of MusicalExpression, representing a sound. Realisation of a MusicalWork during a musical Performance."@en ;
+                                    rdfs:label "Sound"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
+                                  rdfs:subClassOf :MusicologicalFeature ;
+                                  rdfs:comment "An agent (eg. person, group, software or physical artifact)."@en ;
+                                  rdfs:label "Agent"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#A
+:A rdf:type owl:Class ;
+   rdfs:subClassOf :SymbolicEvent ;
+   owl:disjointWith :B ,
+                    :C ,
+                    :D ,
+                    :E ,
+                    :F ,
+                    :G ,
+                    :Rest ;
+   rdfs:comment "Note A"@en ;
+   rdfs:label "A"@en ,
+              "La"@it .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#Accidental
+:Accidental rdf:type owl:Class ;
+            rdfs:subClassOf :SymbolicRepresentation ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isAccidentalOf ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :SymbolicEvent
+                            ] ;
+            owl:disjointWith :Dynamic ,
+                             :InstrumentPart ,
+                             :Position ,
+                             :SymbolicDuration ,
+                             :SymbolicEvent ,
+                             :Voice ;
+            rdfs:comment "Defines the pitch modifiers of the note, in particular: demisharp , doublesharp , sharp , flat , demiflat , sesquiflat , sesquisharp , doubleflat."@en ;
+            rdfs:label "Accidental"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#B
+:B rdf:type owl:Class ;
+   rdfs:subClassOf :SymbolicEvent ;
+   owl:disjointWith :C ,
+                    :D ,
+                    :E ,
+                    :F ,
+                    :G ,
+                    :Rest ;
+   rdfs:comment "Note B"@en ;
+   rdfs:label "B"@en ,
+              "Si"@it .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#C
+:C rdf:type owl:Class ;
+   rdfs:subClassOf :SymbolicEvent ;
+   owl:disjointWith :D ,
+                    :E ,
+                    :F ,
+                    :G ,
+                    :Rest ;
+   rdfs:comment "Note C"@en ;
+   rdfs:label "C"@en ,
+              "Do"@it .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#Chord
+:Chord rdf:type owl:Class ;
+       rdfs:subClassOf :SymbolicRepresentation ;
+       owl:disjointWith :ChordProgression ,
+                        :Dissonance ,
+                        :EmotionType ,
+                        :IntervalPattern ,
+                        :IntervalPatternConstituent ,
+                        :MelodicInterval ,
+                        :MelodicPattern ,
+                        :MelodicPatternConstituent ,
+                        :RhythmicPattern ,
+                        :RhythmicPatternConstituent ,
+                        :Segment ,
+                        :Structure ;
+       rdfs:comment "Any harmonic set of pitches/frequencies consisting of multiple notes (also called \"pitches\") that are heard as if sounding simultaneously."@en ;
+       rdfs:label "Chord"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#ChordProgression
+:ChordProgression rdf:type owl:Class ;
+                  rdfs:subClassOf :MusicologicalFeature ;
+                  owl:disjointWith :ChordVoicing ,
+                                   :EmotionType ,
+                                   :IntervalPattern ,
+                                   :IntervalPatternConstituent ,
+                                   :MelodicPattern ,
+                                   :MelodicPatternConstituent ,
+                                   :RhythmicPattern ,
+                                   :RhythmicPatternConstituent ,
+                                   :Segment ,
+                                   :Structure ;
+                  rdfs:comment "A succession of chords. Chord progressions are the defining feature on which melody and rhythm are built (e.g. I–vi–ii–V)."@en ;
+                  rdfs:label "Chords Progression"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#ChordVoicing
+:ChordVoicing rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( :Chord
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :constitutesProgression ;
+                                                           owl:someValuesFrom :ChordProgression
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf :Chord ;
+              owl:disjointWith :EmotionType ,
+                               :IntervalPattern ,
+                               :MelodicInterval ,
+                               :MelodicPattern ,
+                               :RhythmicPattern ,
+                               :Structure ;
+              rdfs:comment "The voicing opf a chord, which defines the simultaneous vertical placement of notes in relation to each other."@en ;
+              rdfs:label "Chord Voice"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#D
+:D rdf:type owl:Class ;
+   rdfs:subClassOf :SymbolicEvent ;
+   owl:disjointWith :E ,
+                    :F ,
+                    :G ,
+                    :Rest ;
+   rdfs:comment "Note D"@en ;
+   rdfs:label "D"@en ,
+              "Re"@it .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#Dissonance
+:Dissonance rdf:type owl:Class ;
+            rdfs:subClassOf :MelodicInterval ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasDissonanceCount ;
+                              owl:allValuesFrom xsd:int
+                            ] ;
+            owl:disjointWith :EmotionType ,
+                             :MelodicPattern ,
+                             :RhythmicPattern ,
+                             :Structure ;
+            rdfs:comment "A specific kind of melodic interval. Within the western tonal tradition dissonance is associated with harshness, unpleasantness, or unacceptability, although this depends also on familiarity and musical expertise."@en ;
+            rdfs:label "Dissonance"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#DoubleFlat
+:DoubleFlat rdf:type owl:Class ;
+            rdfs:subClassOf :Accidental ;
+            owl:disjointWith :Dynamic ,
+                             :InstrumentPart ,
+                             :Position ,
+                             :SymbolicDuration ;
+            rdfs:comment "An accidental that lowers a note by a whole tone."@en ;
+            rdfs:label "Double Flat"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#DoubleSharp
+:DoubleSharp rdf:type owl:Class ;
+             rdfs:subClassOf :Accidental ;
+             owl:disjointWith :Dynamic ,
+                              :InstrumentPart ,
+                              :Position ,
+                              :SymbolicDuration ;
+             rdfs:comment "An accidental that raises a note by a whole tone."@en ;
+             rdfs:label "Double Sharp"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#Dynamic
+:Dynamic rdf:type owl:Class ;
+         rdfs:subClassOf :SymbolicRepresentation ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasLiteralDynamic ;
+                           owl:allValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasMidiVelocity ;
+                           owl:allValuesFrom xsd:int
+                         ] ;
+         owl:disjointWith :Flat ,
+                          :Position ,
+                          :Sharp ,
+                          :SymbolicDuration ,
+                          :SymbolicEvent ;
+         rdfs:comment "Dynamics are instructions in musical notation to the performer about hearing the loudness of a note or phrase."@en ;
+         rdfs:label "Dynamics"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#E
+:E rdf:type owl:Class ;
+   rdfs:subClassOf :SymbolicEvent ;
+   owl:disjointWith :F ,
+                    :G ,
+                    :Rest ;
+   rdfs:comment "Note E"@en ;
+   rdfs:label "E"@en ,
+              "Mi"@it .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#EmotionType
+:EmotionType rdf:type owl:Class ;
+             rdfs:subClassOf :MusicologicalFeature ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :belongsToRussellsQuadrant ;
+                               owl:allValuesFrom xsd:int
+                             ] ;
+             owl:disjointWith :IntervalPattern ,
+                              :IntervalPatternConstituent ,
+                              :MelodicInterval ,
+                              :MelodicPattern ,
+                              :MelodicPatternConstituent ,
+                              :RhythmicPattern ,
+                              :RhythmicPatternConstituent ,
+                              :Segment ,
+                              :Structure ;
+             rdfs:comment "An type of emotion defined on the Russell's circumplex model of affection."@en ;
+             rdfs:label "Emotion"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#F
+:F rdf:type owl:Class ;
+   rdfs:subClassOf :SymbolicEvent ;
+   owl:disjointWith :G ,
+                    :Rest ;
+   rdfs:comment "Note F"@en ;
+   rdfs:label "F"@en ,
+              "Fa"@it .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#Flat
+:Flat rdf:type owl:Class ;
+      rdfs:subClassOf :Accidental ;
+      owl:disjointWith :InstrumentPart ,
+                       :Position ,
+                       :SymbolicDuration ;
+      rdfs:comment "An accidental that lowers a note by a semitone."@en ;
+      rdfs:label "Flat"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#G
+:G rdf:type owl:Class ;
+   rdfs:subClassOf :SymbolicEvent ;
+   owl:disjointWith :Rest ;
+   rdfs:comment "Note G"@en ;
+   rdfs:label "G"@en ,
+              "Sol"@it .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#InstrumentPart
+:InstrumentPart rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :SymbolicRepresentation
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasInstrumentPart ;
+                                                             owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :SymbolicRepresentation ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :isPositionOf ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :SymbolicRepresentation
+                                ] ;
+                owl:disjointWith :Sharp ;
+                rdfs:comment "The part of a score that contains the notes played by a specific instrument. It is defined exactly by one staff and refers to the music material that can be found on it."@en ;
+                rdfs:label "Instrument Part"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPattern
+:IntervalPattern rdf:type owl:Class ;
+                 rdfs:subClassOf :SymbolicRepresentation ;
+                 owl:disjointWith :MelodicPattern ,
+                                  :MelodicPatternConstituent ,
+                                  :RhythmicPattern ,
+                                  :RhythmicPatternConstituent ,
+                                  :Segment ,
+                                  :Structure ;
+                 rdfs:comment "A pattern consisting of melodic intervals that are created between one note and the next."@en ;
+                 rdfs:label "Interval Pattern"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#IntervalPatternConstituent
+:IntervalPatternConstituent rdf:type owl:Class ;
+                            owl:equivalentClass [ owl:intersectionOf ( :MelodicInterval
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :belongsToIntervalPattern ;
+                                                                         owl:someValuesFrom :IntervalPattern
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ] ;
+                            rdfs:subClassOf :IntervalPattern ,
+                                            :MelodicInterval ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasIntervalPatternCardinality ;
+                                              owl:allValuesFrom xsd:int
+                                            ] ;
+                            owl:disjointWith :MelodicPattern ,
+                                             :RhythmicPattern ,
+                                             :Structure ;
+                            rdfs:comment "The constituent of an interval pattern. It has a cardinality that defines the position of the constituent within the pattern."@en ;
+                            rdfs:label "Interval Pattern Constituent"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#MelodicInterval
+:MelodicInterval rdf:type owl:Class ;
+                 rdfs:subClassOf :SymbolicRepresentation ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :intervalCreatedBy ;
+                                   owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :SymbolicEvent
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasIntervalType ;
+                                   owl:allValuesFrom xsd:string
+                                 ] ;
+                 owl:disjointWith :MelodicPattern ,
+                                  :MelodicPatternConstituent ,
+                                  :RhythmicPattern ,
+                                  :RhythmicPatternConstituent ,
+                                  :Segment ,
+                                  :Structure ;
+                 rdfs:comment "An interval that is created between a note and the following one."@en ;
+                 rdfs:label "Melodic Interval"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPattern
+:MelodicPattern rdf:type owl:Class ;
+                rdfs:subClassOf :SymbolicRepresentation ;
+                owl:disjointWith :RhythmicPattern ,
+                                 :RhythmicPatternConstituent ,
+                                 :Segment ,
+                                 :Structure ;
+                rdfs:comment "A pattern consisting of the succession of Symbolic Events that are repeated several times within a music piece."@en ;
+                rdfs:label "Melodic Pattern"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#MelodicPatternConstituent
+:MelodicPatternConstituent rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( :SymbolicEvent
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :hasMelodicPatternConstituent ;
+                                                                        owl:someValuesFrom :MelodicPattern
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:subClassOf :MelodicPattern ,
+                                           :SymbolicEvent ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :hasMelodicPatternCardinality ;
+                                             owl:allValuesFrom xsd:int
+                                           ] ;
+                           owl:disjointWith :RhythmicPattern ,
+                                            :Structure ;
+                           rdfs:comment "The constituent of a melodic pattern. It has a cardinality that defines the position of the constituent within the pattern."@en ;
+                           rdfs:label "Melodic Pattern Constituent"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#MusicologicalFeature
+:MusicologicalFeature rdf:type owl:Class ;
+                      rdfs:comment "A musicological feature is defined as any element useful for musicological analysis. This analysis can be of different types, and intertwine with other fields of research, such as psychoacoustics. All typical elements of a score are considered musicological features, together with a series of previously extracted features that group these elements together."@en ;
+                      rdfs:label "Features"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#Position
+:Position rdf:type owl:Class ;
+          rdfs:subClassOf :SymbolicRepresentation ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isDefinedAtTimeInterval ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass <http://purl.org/NET/c4dm/timeline.owl#Interval>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isPositionOf ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :SymbolicEvent
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasMeasure ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:int
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasMeasureOffset ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:decimal
+                          ] ;
+          owl:disjointWith :Sharp ;
+          rdfs:comment "The position of a Symbolic Event. It is expressed both from a symbolic perspective (the position on the music score) and from a temporal perspective (by means of the offset time and the endtime of the event)."@en ;
+          rdfs:label "Position"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#Rest
+:Rest rdf:type owl:Class ;
+      rdfs:subClassOf :SymbolicEvent ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasAccidental ;
+                        owl:maxQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Accidental
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasDynamic ;
+                        owl:maxQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Dynamic
+                      ] ;
+      rdfs:comment "A musical notation sign that indicates the absence of a sound."@en ;
+      rdfs:label "Rest"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPattern
+:RhythmicPattern rdf:type owl:Class ;
+                 rdfs:subClassOf :SymbolicRepresentation ;
+                 owl:disjointWith :Segment ,
+                                  :Structure ;
+                 rdfs:comment "A pattern consisting of the Symbolic Duration related to the succession of Symbolic Events that are repeated within a musical piece."@en ;
+                 rdfs:label "Rhythmic Pattern"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#RhythmicPatternConstituent
+:RhythmicPatternConstituent rdf:type owl:Class ;
+                            rdfs:subClassOf :RhythmicPattern ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasRhythmicPatternCardinality ;
+                                              owl:allValuesFrom xsd:int
+                                            ] ;
+                            owl:disjointWith :Structure ;
+                            rdfs:comment "The constituent of a rhythmic pattern. It has a cardinality that defines the position of the constituent within the pattern."@en ;
+                            rdfs:label "Rhythmic Pattern Constituent"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#Segment
+:Segment rdf:type owl:Class ;
+         rdfs:subClassOf :MusicologicalFeature ;
+         rdfs:comment "A constituent part of the music structure. Musical segments are defined according to the similarity of the harmonic and melodic material that constitutes them."@en ;
+         rdfs:label "Segment"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#Sharp
+:Sharp rdf:type owl:Class ;
+       rdfs:subClassOf :Accidental ;
+       owl:disjointWith :SymbolicDuration ;
+       rdfs:comment "An accidental that raises a note by a semitone."@en ;
+       rdfs:label "Sharp"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#Structure
+:Structure rdf:type owl:Class ;
+           rdfs:subClassOf :MusicologicalFeature ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isDefinedBySegment ;
+                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Segment
+                           ] ;
+           rdfs:comment "The structure of the music piece. It is composed by different segments that can in turn be organised in patterns (e.g. A-B-C-B-C-D)."@en ;
+           rdfs:label "Structure"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicDuration
+:SymbolicDuration rdf:type owl:Class ;
+                  rdfs:subClassOf :SymbolicRepresentation ;
+                  rdfs:comment "Defines the duration of the note, according to the music theory relative durations."@en ;
+                  rdfs:label "Symbolic Duration"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicEvent
+:SymbolicEvent rdf:type owl:Class ;
+               rdfs:subClassOf :SymbolicRepresentation ;
+               rdfs:comment "Any kind of note and rest that can be found in a music score."@en ;
+               rdfs:label "Symbolic Event"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#SymbolicRepresentation
+:SymbolicRepresentation rdf:type owl:Class ;
+                        rdfs:subClassOf :MusicologicalFeature ;
+                        rdfs:comment "A symbolic representation is defined as any kind of representation aimed at representing the music material (e.g. MIDI, Music XML, etc.)."@en ;
+                        rdfs:label "Symbolic Representation"@en .
+
+
+###  https://github.com/andreamust/HaMSE_Ontology/schema#Voice
+:Voice rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :InstrumentPart
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasVoice ;
+                                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :InstrumentPart ;
+       rdfs:comment "One of the multiple voices that can constitutes a single Instrument Part and are therefore represented on the same staff."@en ;
+       rdfs:label "Voice"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleFlat
+                :DoubleSharp
+                :Flat
+                :Sharp
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
