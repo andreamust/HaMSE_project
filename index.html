@@ -52,9 +52,12 @@
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-white mb-4">The Harmonic, Melodic, Structural and Emotional Features Ontology</h2>
                         <p class="text-white-50">
-                            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                            <a href="https://startbootstrap.com/theme/grayscale/">the preview page</a>
-                            . The theme is open source, and you can use it for any purpose, personal or commercial.
+                            This research aims to apply Semantic Technologies – in particular the Semantic Web – to musicological applications.<br>
+                            Before doing so, this work analyses the limits of musicological research extensively, focusing on the interaction between different musicological approaches. More focus is placed to the quantitative approaches of systematic musicology. Special attention is then paid to the dichotomy, underlying musicological research, between a physical component - typically investigated by means of scientific methods - and a component related to cultural and perceptual aspects, typically studied by the humanities. Therefore, the first research question of this research is:
+                            <br><br><i>RQ1) How can semantic technologies help in linking different aspects of musicology?</i><br><br>
+                            The representational aspect of musical material is then examined, i.e. how music is experienced both from a perceptual and an analytical perspective. Hence, a detailed analysis of the various types of computational representations (signal, symbolic, vector-based and semantic) is provided. This kind of analysis lays the groundwork for the second research question of the research:
+                            <br><br><i>RQ2) How to represent music for musicological analysis in order to catch as many aspects as possible?</i><br><br>
+                            In order to address these two major questions, an ontological approach is proposed. A set of musical features that can serve this purpose is then discussed, divided into four main categories: melodic, harmonic, structural and emotional. Different Music Information Retrieval approaches aimed at extracting such features are examined and implemented. Finally, the HaMSE ontology is proposed as a model for representing musical content in different forms (both symbolic and signal), linking them to the set of previously defined features. This ontology also aims to describe the cultural characteristics of the composition, e.g., the author and the era in which the song was composed.
                         </p>
                     </div>
                 </div>
@@ -70,7 +73,15 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>The HaMSE Ontology</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                            <p class="text-black-50 mb-0">The prefixes used in the HaMSE Ontology are the following:</p>
+                            <br>
+                            <p style="font-family:'Lucida Console', monospace">PREFIX mo: http://purl.org/ontology/mo/</p>
+                            <p style="font-family:'Lucida Console', monospace">PREFIX tl: http://purl.org/NET/c4dm/timeline.owl#</p>
+                            <p style="font-family:'Lucida Console', monospace">PREFIX foaf: http://xmlns.com/foaf/spec/</p>
+                            <p style="font-family:'Lucida Console', monospace">PREFIX owl: http://www.w3.org/2002/07/owl#</p>
+                            <p style="font-family:'Lucida Console', monospace">PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema#</p>
+                            <p style="font-family:'Lucida Console', monospace">PREFIX xsd: http://www.w3.org/2001/XMLSchema#</p>
+                            <p style="font-family:'Lucida Console', monospace">PREFIX mo: http://purl.org/ontology/mo/</p>
                         </div>
                     </div>
                 </div>
@@ -82,7 +93,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Describing the Musical Work</h4>
-                                    <p class="mb-0 text-white-50">First of all, the ontology aims to describe the characteristics of the music track, i.e. all the information that has been defined as "metadata" in the previous sections. To do this, I decided to use the Music Ontology. This ontology's choice is mainly due to the wide use that has been made of it in various works in recent years and its broad interoperability with other ontologies (e.g. TimeLine ontology, Music Score Ontology, etc.).</p>
+                                    <p class="mb-0 text-white-50">The ontology aims to describe the characteristics of the music track, i.e. all the information that has been defined as "metadata" in the previous sections. To do this, the Music Ontology has been used. This ontology's choice is mainly due to the wide use that has been made of it in various works in recent years and its broad interoperability with other ontologies (e.g. TimeLine ontology, Music Score Ontology, etc.).</p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -97,7 +108,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Describing Symbolical Music Events</h4>
-                                    <p class="mb-0 text-white-50">In order to represent the symbolic representations of a composition, I instead used the HaMSE ontology, which was created specifically for this research. With the class hamse:SymbolicEvent I therefore aim to describe everything that can be a nuclear element of the symbolic representation, interpreted as either a note or a pause. The notation event, such as all the other classes listed in this section, is intended as a subclass of hamse:MusicologicalFeature. This Symbolic Event is a super-class of all the classes that characterise the note (e.g. classes that express dynamic, pitch, etc.).</p>
+                                    <p class="mb-0 text-white-50">In order to represent the symbolic representations of a composition, the HaMSE ontology has been implemented. The class hamse:SymbolicEvent aims to describe everything that can be a nuclear element of the symbolic representation, interpreted as either a note or a pause. The notation event, such as all the other classes listed in this section, is intended as a subclass of hamse:MusicologicalFeature. This Symbolic Event is a super-class of all the classes that characterise the note (e.g. classes that express dynamic, pitch, etc.).</p>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
                             </div>
@@ -127,7 +138,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Score-audio-features Alignment</h4>
-                                    <p class="mb-0 text-white-50">To align the symbolic representation to the audio track I used the TimeLine Ontology. This ontology allows two different timelines to be defined and aligned. In particular in this case I am going to align an abstract timeline (tl:AbstractTimeLine) with a discrete timeline (tl:DiscreteTimeLine). These two different timelines are aligned by means of tl:TimeLineMap.</p>
+                                    <p class="mb-0 text-white-50">To align the symbolic representation to the audio track the TimeLine Ontology has been used. This ontology allows two different timelines to be defined and aligned. In particular in this case I am going to align an abstract timeline (tl:AbstractTimeLine) with a discrete timeline (tl:DiscreteTimeLine). These two different timelines are aligned by means of tl:TimeLineMap.</p>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
                             </div>
@@ -143,7 +154,7 @@
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-white mb-4">Ontology Documentation</h2>
                         <p class="text-white-50">
-                            Grayscale is a free Bootstrap theme created by Start Bootstrap. 
+                            The ontology documentation was created using <a href="https://github.com/dgarijo/Widoco">Widoco</a>
                         </p>
                         <iframe class="doc-iframe" src="documentation/index-en.html"></iframe>
                     </div>
@@ -177,7 +188,9 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Download Files</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                            <p class="text-black-50 mb-0">By clicking the buttons aside it is possible to download the ontology and the knowledge base files.</p>
+                            <br>
+                            <p class="text-black-50 mb-0">All the project files are hosted in the project <a href="https://github.com/andreamust/HaMSE_Ontology">GitHub repository.</a></p>
                         </div>
                     </div>
                 </div>
@@ -190,7 +203,7 @@
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-white mb-4">Ontology Visualisation</h2>
                         <p class="text-white-50">
-                            Grayscale is a free Bootstrap theme created by Start Bootstrap. 
+                            The ontology visualisation was created using <a href="http://vowl.visualdataweb.org/webvowl.html">WebVOWL</a>. 
                         </p>
                         <iframe class="doc-iframe" src="http://www.visualdataweb.de/webvowl/#opts=doc=0;#iri=https://raw.githubusercontent.com/andreamust/HaMSE_Ontology/master/schema"></iframe>
                     </div>
